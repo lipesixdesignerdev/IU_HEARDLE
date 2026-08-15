@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IU Heardle — Adivinhe a Música</title>
+  <meta name="description" content="O jogo de adivinhar músicas da IU. Ouça o trecho e descubra o título antes de acabar as tentativas!"/>
+  <link rel="icon" href="iuHeart-2x.gif" type="image/gif">
+
+  <!-- Poppins (HooBank-style) + fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img id="ambientBg" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;filter:blur(80px) opacity(0.35);transition:all 1s ease;pointer-events:none;" src="" />
+
+<header>
+  <div class="logo">
+    <div class="logo-avatar"><img src="iuHeart-2x.gif" alt="IU"></div>
+    <div class="logo-text">
+      <span class="logo-iu">IU</span><span class="logo-heardle">Heardle</span>
+    </div>
+  </div>
+  <div class="header-actions">
+    <div class="mode-switcher" id="modeSwitcher">
+      <button class="mode-btn active" id="modeDailyBtn" data-mode="daily">📅 Diário</button>
+      <button class="mode-btn" id="modePracticeBtn" data-mode="practice">♾️ Prática</button>
+    </div>
+    <div class="lang-switcher" id="langSwitcher"></div>
+    <button class="icon-btn" id="statsBtn" title="Estatísticas">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
+    </button>
+    <button class="icon-btn" id="newBtn" title="Nova música">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
+    </button>
+  </div>
+</header>
+
+<div class="app">
+  <div class="daily-banner" id="dailyBanner" style="display:none;text-align:center;font-size:12px;color:var(--accent);margin-top:10px;font-weight:600;background:var(--card);padding:8px 14px;border-radius:10px;border:1px solid var(--border);">
+    <span id="dailyBannerText">📅 Desafio Diário</span>
+  </div>
+
+  <div class="bars" id="barsContainer"></div>
+
+  <div class="player-card">
+    <div class="waveform" id="waveform"></div>
+    <div class="player-controls-wrap">
+      <button class="play-btn" id="playBtn">▶</button>
+      <div class="vol-control">
+        <button class="icon-btn vol-btn" id="volBtn" title="Volume">🔊</button>
+        <input type="range" class="vol-slider" id="volSlider" min="0" max="1" step="0.05" value="1">
+      </div>
+    </div>
+    <p id="statusText" style="font-size:12px;color:var(--muted);font-weight:500;letter-spacing:0.3px;">Pronto! Clique ▶</p>
+    <div class="timer-track"><div class="timer-fill" id="timerFill"></div></div>
+    <div id="timerLabel" style="font-size:11px;color:var(--muted);width:100%;text-align:right;font-weight:500;">0.0s / 1s</div>
+
+    <div class="hint-section" style="width:100%;margin-top:8px;text-align:center;">
+      <button class="hint-btn" id="hintBtn" style="background:var(--card);border:1px solid var(--border);color:var(--accent);padding:6px 14px;border-radius:12px;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.2s;">
+        💡 Ver Dica
+      </button>
+      <div class="hint-box" id="hintBox" style="display:none;margin-top:6px;font-size:12px;color:var(--text);background:rgba(0,212,255,0.06);padding:8px 12px;border-radius:10px;border:1px solid var(--accent-glow);">
+        <span id="hintContent"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="guesses-list" id="guessesList"></div>
+
+  <div id="alphaBrowser"></div>
+
+  <div class="input-section">
+    <div class="autocomplete" id="autocomplete"></div>
+    <input class="song-input" type="text" id="songInput" autocomplete="off">
+  </div>
+
+  <div class="btn-row">
+    <button class="btn btn-skip" id="skipBtn"></button>
+    <button class="btn btn-confirm" id="confirmBtn"></button>
+  </div>
+
+  <div class="footer-credit" style="text-align: center; font-size: 13px; color: var(--muted); margin-top: 36px; margin-bottom: 12px; font-weight: 500;">
+    <span id="creditText"></span> 
+    <a href="https://www.twitch.tv/lipesiix" target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 600;">LipeSiix</a>
+  </div>
+</div>
+
+<!-- STATS MODAL -->
+<div class="modal-overlay" id="statsModal">
+  <div class="modal-content">
+    <p class="modal-title" id="statsTitle">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="url(#statsGrad)" stroke-width="1.8" style="margin-bottom:-4px;" width="24" height="24">
+        <defs><linearGradient id="statsGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4ff" /><stop offset="100%" stop-color="#0070f3" /></linearGradient></defs>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+      </svg>
+    </p>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:4px;font-weight:500;" id="statsSubtitle"></p>
+    <div class="stats-grid" id="statsGrid"></div>
+    <div class="dist-section" id="distSection"></div>
+    <button id="statsResetBtn" class="btn btn-skip" style="margin-top:16px;"></button>
+    <button id="statsCloseBtn" class="btn btn-confirm" style="margin-top:8px;"></button>
+  </div>
+</div>
+
+<!-- RESULT MODAL -->
+<div class="modal-overlay" id="resultModal">
+  <div class="modal-content">
+    <h2 id="resultTitle" style="font-family:'Poppins',sans-serif;font-size:22px;font-weight:700;"></h2>
+    <div id="albumArtWrapper" style="width:180px;height:180px;margin:16px auto;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--card);display:flex;align-items:center;justify-content:center;">
+      <img id="albumArt" src="" class="album-art">
+      <div id="albumFallback" style="display:none;align-items:center;justify-content:center;font-size:52px;width:100%;">🎵</div>
+    </div>
+    <p id="resultSongName" style="font-size:18px;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"></p>
+    <p id="resultAlbum" style="color:var(--muted);font-size:13px;margin-bottom:12px;font-weight:500;"></p>
+    
+    <div id="ytContainer" style="margin-bottom:16px;display:flex;justify-content:center;">
+      <a id="ytBtn" href="#" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;background:#ff0000;color:#fff;text-decoration:none;font-size:12px;font-weight:600;box-shadow:0 4px 15px rgba(255,0,0,0.3);transition:transform 0.2s;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span id="ytBtnText">Ver no YouTube</span>
+      </a>
+    </div>
+
+    <div style="display:flex;gap:10px;justify-content:center;margin-top:10px;">
+      <button id="againBtn" class="btn btn-confirm"></button>
+      <button id="shareBtn" class="icon-btn" title="Compartilhar" style="flex-shrink:0;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:15px;color:var(--text);cursor:pointer;font-weight:600;display:none;align-items:center;justify-content:center;transition:all 0.2s;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" /></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- THEME SWITCHER -->
+<div class="theme-switcher">
+  <div class="theme-options" id="themeOptions"></div>
+  <button class="theme-toggle-btn" id="themeToggleBtn" title="Mudar tema"></button>
+</div>
+
+<script src="dist/guard.js" onerror="this.onerror=null;this.src='guard.js';"></script>
+<script src="dist/database.js" onerror="this.onerror=null;this.src='database.js';"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="dist/script.js" onerror="this.onerror=null;this.src='script.js';"></script>
+</body>
+</html>
