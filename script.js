@@ -4,9 +4,9 @@ const CONFIG = {
   KEYS: { STATS: 'iu-heardle-stats', THEME: 'iu-heardle-theme', VOLUME: 'iu-heardle-vol', MODE: 'iu-heardle-mode' },
   THEMES: ['dark', 'light', 'neon', 'sepia', 'abyss'],
   I18N: {
-    PT: { title: "IU Heardle — Adivinhe a Música", status: "Pronto! Clique ▶", placeholder: "seu palpite aqui…", skip: "⏭ Pular (+1s)", confirm: "✓ Confirmar", won: "🎉 Você acertou!", lost: "😔 Não foi dessa vez!", playAgain: "🔄 Jogar Novamente", stats: "📊 Estatísticas", labels: ["Partidas", "Vitórias", "Sequência", "Melhor"], dist: "Distribuição", reset: "🗑 Resetar", close: "Fechar", pct: "de aproveitamento", credit: "Feito com ❤ por", copied: "Copiado para a área de transferência!", hint: "💡 Ver Dica (Ano/Álbum)", watchMV: "🎬 Assistir MV no YouTube", listenAudio: "🎵 Ouvir no YouTube Music", dailyBanner: "📅 Desafio Diário", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diário", practiceBtn: "♾️ Prática", statsTitle: "Estatísticas", newSong: "Nova música", calTitle: "📅 Arquivo Diário", calSub: "Jogue desafios anteriores ou reveja seus resultados:", calBtnTitle: "Calendário de Desafios" },
-    EN: { title: "IU Heardle — Guess the Song", status: "Ready! Click ▶", placeholder: "your guess here…", skip: "⏭ Skip (+1s)", confirm: "✓ Confirm", won: "🎉 You got it!", lost: "😔 Not this time!", playAgain: "🔄 Play Again", stats: "📊 Statistics", labels: ["Played", "Wins", "Streak", "Best"], dist: "Distribution", reset: "🗑 Reset", close: "Close", pct: "win rate", credit: "Made with ❤ by", copied: "Copied to clipboard!", hint: "💡 Show Hint (Year/Album)", watchMV: "🎬 Watch MV on YouTube", listenAudio: "🎵 Listen on YouTube Music", dailyBanner: "📅 Daily Challenge", practiceBanner: "♾️ Practice Mode (Unlimited)", dailyBtn: "📅 Daily", practiceBtn: "♾️ Practice", statsTitle: "Statistics", newSong: "New Song", calTitle: "📅 Daily Archive", calSub: "Play past daily challenges or review your results:", calBtnTitle: "Challenge Calendar" },
-    ES: { title: "IU Heardle — Adivina la Canción", status: "¡Listo! Clic ▶", placeholder: "tu respuesta aquí…", skip: "⏭ Saltar (+1s)", confirm: "✓ Confirmar", won: "🎉 ¡Lo lograste!", lost: "😔 ¡Otra vez será!", playAgain: "🔄 Jugar de Nuevo", stats: "📊 Estadísticas", labels: ["Partidas", "Victorias", "Racha", "Mejor"], dist: "Distribución", reset: "🗑 Reiniciar", close: "Cerrar", pct: "de rendimiento", credit: "Hecho com ❤ por", copied: "¡Copiado al portapapeles!", hint: "💡 Ver Pista (Año/Álbum)", watchMV: "🎬 Ver MV en YouTube", listenAudio: "🎵 Escuchar en YouTube Music", dailyBanner: "📅 Desafío Diario", practiceBanner: "♾️ Modo Práctica (Ilimitado)", dailyBtn: "📅 Diario", practiceBtn: "♾️ Práctica", statsTitle: "Estadísticas", newSong: "Nueva Canción", calTitle: "📅 Archivo Diario", calSub: "Juega desafíos pasados o revisa tus resultados:", calBtnTitle: "Calendario de Desafíos" }
+    PT: { title: "IU Heardle — Adivinhe a Música", status: "Pronto! Clique ▶", placeholder: "seu palpite aqui…", skip: "⏭ Pular (+1s)", confirm: "✓ Confirmar", won: "🎉 Você acertou!", lost: "😔 Não foi dessa vez!", playAgain: "🔄 Jogar Novamente", stats: "📊 Estatísticas", labels: ["Partidas", "Vitórias", "Sequência", "Melhor"], dist: "Distribuição", reset: "🗑 Resetar", close: "Fechar", pct: "de aproveitamento", credit: "Feito com ❤ por", copied: "Copiado para a área de transferência!", hint: "💡 Ver Dica (Ano/Álbum)", watchMV: "🎬 Assistir MV no YouTube", listenAudio: "🎵 Ouvir no YouTube Music", dailyBanner: "📅 Desafio Diário", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diário", practiceBtn: "♾️ Prática", statsTitle: "Estatísticas", newSong: "Nova música", calTitle: "📅 Arquivo Diário", calSub: "Jogue desafios anteriores ou reveja seus resultados:", calBtnTitle: "Calendário de Desafios", playFull: "Tocar Música", pauseFull: "Pausar Música" },
+    EN: { title: "IU Heardle — Guess the Song", status: "Ready! Click ▶", placeholder: "your guess here…", skip: "⏭ Skip (+1s)", confirm: "✓ Confirm", won: "🎉 You got it!", lost: "😔 Not this time!", playAgain: "🔄 Play Again", stats: "📊 Statistics", labels: ["Played", "Wins", "Streak", "Best"], dist: "Distribution", reset: "🗑 Reset", close: "Close", pct: "win rate", credit: "Made with ❤ by", copied: "Copied to clipboard!", hint: "💡 Show Hint (Year/Album)", watchMV: "🎬 Watch MV on YouTube", listenAudio: "🎵 Listen on YouTube Music", dailyBanner: "📅 Daily Challenge", practiceBanner: "♾️ Practice Mode (Unlimited)", dailyBtn: "📅 Daily", practiceBtn: "♾️ Practice", statsTitle: "Statistics", newSong: "New Song", calTitle: "📅 Daily Archive", calSub: "Play past daily challenges or review your results:", calBtnTitle: "Challenge Calendar", playFull: "Play Song", pauseFull: "Pause Song" },
+    ES: { title: "IU Heardle — Adivina la Canción", status: "¡Listo! Clic ▶", placeholder: "tu respuesta aquí…", skip: "⏭ Saltar (+1s)", confirm: "✓ Confirmar", won: "🎉 ¡Lo lograste!", lost: "😔 ¡Otra vez será!", playAgain: "🔄 Jugar de Nuevo", stats: "📊 Estadísticas", labels: ["Partidas", "Victorias", "Racha", "Mejor"], dist: "Distribución", reset: "🗑 Reiniciar", close: "Cerrar", pct: "de rendimiento", credit: "Hecho com ❤ por", copied: "¡Copiado al portapapeles!", hint: "💡 Ver Pista (Año/Álbum)", watchMV: "🎬 Ver MV en YouTube", listenAudio: "🎵 Escuchar en YouTube Music", dailyBanner: "📅 Desafío Diario", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diario", practiceBtn: "♾️ Práctica", statsTitle: "Estadísticas", newSong: "Nueva Canción", calTitle: "📅 Archivo Diario", calSub: "Juega desafíos pasados o revisa tus resultados:", calBtnTitle: "Calendario de Desafíos", playFull: "Reproducir Canción", pauseFull: "Pausar Canción" }
   }
 };
 
@@ -405,6 +405,19 @@ function updateGameView() {
   DOM.get('guessesList').innerHTML = STATE.guesses.map(g => `<div class="guess-item">${g.title}</div>`).join('');
 }
 
+function updateModalPlayBtn(isPlaying) {
+  const icon = DOM.get('modalPlayIcon');
+  const text = DOM.get('modalPlayText');
+  if (!icon || !text) return;
+  if (isPlaying) {
+    icon.textContent = '⏸';
+    text.textContent = i18n('pauseFull');
+  } else {
+    icon.textContent = '▶';
+    text.textContent = i18n('playFull');
+  }
+}
+
 async function finishGame(won, restored = false) {
   STATE.over = true; pauseAudio();
   
@@ -420,6 +433,26 @@ async function finishGame(won, restored = false) {
   DOM.get('resultTitle').textContent = i18n(won ? 'won' : 'lost');
   DOM.get('resultSongName').textContent = STATE.song.title;
   DOM.get('resultAlbum').textContent = STATE.song.album;
+
+  // Full Audio Autoplay on Win/Finish
+  STATE.audio.currentTime = 0;
+  STATE.audio.play().then(() => {
+    updateModalPlayBtn(true);
+  }).catch(() => {
+    updateModalPlayBtn(false);
+  });
+
+  const modalPlayBtn = DOM.get('modalPlayBtn');
+  if (modalPlayBtn) {
+    modalPlayBtn.onclick = () => {
+      if (STATE.audio.paused) {
+        STATE.audio.play().then(() => updateModalPlayBtn(true));
+      } else {
+        STATE.audio.pause();
+        updateModalPlayBtn(false);
+      }
+    };
+  }
 
   // YouTube MV / Audio Button Setup
   const yt = getYouTubeLink(STATE.song);
