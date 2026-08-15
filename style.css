@@ -148,13 +148,15 @@ header {
   align-items: center;
   width: 100%;
   max-width: 560px;
-  padding: 20px 24px 16px;
+  padding: 16px 20px 14px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 8px;
   z-index: 10;
   position: relative;
   transition: border-color 0.3s;
   backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* ─── LOGO ─── */
@@ -219,7 +221,9 @@ header {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .mode-switcher {
@@ -229,19 +233,20 @@ header {
   overflow: hidden;
   background: var(--card);
   backdrop-filter: blur(10px);
-  margin-right: 4px;
+  flex-shrink: 0;
 }
 
 .mode-btn {
   background: none;
   border: none;
   color: var(--muted);
-  padding: 5px 10px;
+  padding: 5px 8px;
   font-size: 11px;
   cursor: pointer;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
 }
 
 .mode-btn.active {
@@ -1062,4 +1067,36 @@ header {
 ::selection {
   background: rgba(0,212,255,0.3);
   color: white;
+}
+
+/* ─── RESPONSIVE BREAKPOINTS ─── */
+@media (max-width: 560px) {
+  header {
+    justify-content: center;
+    padding: 12px 14px;
+    gap: 8px;
+  }
+  .logo {
+    justify-content: center;
+    width: 100%;
+  }
+  .header-actions {
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+  }
+  .mode-btn, .lang-btn {
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .app {
+    padding: 0 12px;
+  }
+  .player-card {
+    padding: 20px 16px;
+  }
 }
