@@ -87,24 +87,7 @@ function getYouTubeLink(song) {
 
 function getSongYear(song) {
   if (!song) return '----';
-  const album = (song.album || '').toLowerCase();
-  const title = (song.title || '').toLowerCase();
-
-  if (album.includes('winning') || title.includes('bye, summer') || album.includes('pt. 3')) return '2024';
-  if (album.includes('pieces') || album.includes('lilac') || title.includes('celebrity') || title.includes('strawberry moon')) return '2021';
-  if (title.includes('eight')) return '2020';
-  if (album.includes('love poem')) return '2019';
-  if (title.includes('bbibbi')) return '2018';
-  if (album.includes('palette') || album.includes('flower bookmark, pt. 2')) return '2017';
-  if (album.includes('chat-shire') || title.includes('마음') || title.includes('heart')) return '2015';
-  if (album.includes('flower bookmark')) return '2014';
-  if (album.includes('modern times')) return '2013';
-  if (album.includes('spring of twenty')) return '2012';
-  if (album.includes('last fantasy') || album.includes('real+')) return '2011';
-  if (album.includes('real') || title.includes('잔소리') || title.includes('nitpicking')) return '2010';
-  if (album.includes('growing up') || album.includes('im')) return '2009';
-  if (album.includes('lost and found') || title.includes('미아') || title.includes('lost child')) return '2008';
-  return '2015-2021';
+  return song.year || '2017';
 }
 
 function getDailyDateString() {
