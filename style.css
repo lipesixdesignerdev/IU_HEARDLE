@@ -290,6 +290,76 @@ header {
   transform: scale(1.04);
 }
 
+/* ─── CALENDAR ARCHIVE ─── */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cal-day-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.cal-day-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.cal-day-card .cal-date {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cal-day-card .cal-status-badge {
+  font-size: 10px;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.cal-day-card.status-win {
+  border-color: #1db954;
+  background: rgba(29, 185, 84, 0.12);
+}
+.cal-day-card.status-win .cal-status-badge {
+  color: #1db954;
+}
+
+.cal-day-card.status-loss {
+  border-color: #ff4757;
+  background: rgba(255, 71, 87, 0.12);
+}
+.cal-day-card.status-loss .cal-status-badge {
+  color: #ff4757;
+}
+
+.cal-day-card.status-today {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+.cal-day-card.status-today .cal-status-badge {
+  color: var(--accent);
+}
+
+.cal-day-card.status-pending {
+  opacity: 0.75;
+}
+.cal-day-card.status-pending .cal-status-badge {
+  color: var(--muted);
+}
+
 .lang-switcher {
   display: flex;
   border: 1px solid var(--border);

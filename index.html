@@ -30,6 +30,9 @@
       <button class="mode-btn" id="modePracticeBtn" data-mode="practice">♾️ Prática</button>
     </div>
     <div class="lang-switcher" id="langSwitcher"></div>
+    <button class="icon-btn" id="calendarBtn" title="Calendário de Desafios">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+    </button>
     <button class="icon-btn" id="statsBtn" title="Estatísticas">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
     </button>
@@ -86,6 +89,16 @@
   <div class="footer-credit" style="text-align: center; font-size: 13px; color: var(--muted); margin-top: 36px; margin-bottom: 12px; font-weight: 500;">
     <span id="creditText"></span> 
     <a href="https://www.twitch.tv/lipesiix" target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 600;">LipeSiix</a>
+  </div>
+</div>
+
+<!-- CALENDAR MODAL -->
+<div class="modal-overlay" id="calendarModal">
+  <div class="modal-content" style="max-width:420px;max-height:85vh;overflow-y:auto;">
+    <h2 id="calendarTitle" style="font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;margin-bottom:6px;">📅 Arquivo Diário</h2>
+    <p id="calendarSub" style="font-size:12px;color:var(--muted);margin-bottom:16px;">Selecione um dia para jogar ou rever seu resultado:</p>
+    <div id="calendarGrid" class="calendar-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;"></div>
+    <button id="calendarCloseBtn" class="btn btn-confirm" style="margin-top:8px;">Fechar</button>
   </div>
 </div>
 

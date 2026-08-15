@@ -4,9 +4,9 @@ const CONFIG = {
   KEYS: { STATS: 'iu-heardle-stats', THEME: 'iu-heardle-theme', VOLUME: 'iu-heardle-vol', MODE: 'iu-heardle-mode' },
   THEMES: ['dark', 'light', 'neon', 'sepia', 'abyss'],
   I18N: {
-    PT: { title: "IU Heardle — Adivinhe a Música", status: "Pronto! Clique ▶", placeholder: "seu palpite aqui…", skip: "⏭ Pular (+1s)", confirm: "✓ Confirmar", won: "🎉 Você acertou!", lost: "😔 Não foi dessa vez!", playAgain: "🔄 Jogar Novamente", stats: "📊 Estatísticas", labels: ["Partidas", "Vitórias", "Sequência", "Melhor"], dist: "Distribuição", reset: "🗑 Resetar", close: "Fechar", pct: "de aproveitamento", credit: "Feito com ❤ por", copied: "Copiado para a área de transferência!", hint: "💡 Ver Dica (Ano/Álbum)", watchMV: "🎬 Assistir MV no YouTube", listenAudio: "🎵 Ouvir no YouTube Music", dailyBanner: "📅 Desafio Diário de Hoje", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diário", practiceBtn: "♾️ Prática", statsTitle: "Estatísticas", newSong: "Nova música" },
-    EN: { title: "IU Heardle — Guess the Song", status: "Ready! Click ▶", placeholder: "your guess here…", skip: "⏭ Skip (+1s)", confirm: "✓ Confirm", won: "🎉 You got it!", lost: "😔 Not this time!", playAgain: "🔄 Play Again", stats: "📊 Statistics", labels: ["Played", "Wins", "Streak", "Best"], dist: "Distribution", reset: "🗑 Reset", close: "Close", pct: "win rate", credit: "Made with ❤ by", copied: "Copied to clipboard!", hint: "💡 Show Hint (Year/Album)", watchMV: "🎬 Watch MV on YouTube", listenAudio: "🎵 Listen on YouTube Music", dailyBanner: "📅 Today's Daily Challenge", practiceBanner: "♾️ Practice Mode (Unlimited)", dailyBtn: "📅 Daily", practiceBtn: "♾️ Practice", statsTitle: "Statistics", newSong: "New Song" },
-    ES: { title: "IU Heardle — Adivina la Canción", status: "¡Listo! Clic ▶", placeholder: "tu respuesta aquí…", skip: "⏭ Saltar (+1s)", confirm: "✓ Confirmar", won: "🎉 ¡Lo lograste!", lost: "😔 ¡Otra vez será!", playAgain: "🔄 Jugar de Nuevo", stats: "📊 Estadísticas", labels: ["Partidas", "Victorias", "Racha", "Mejor"], dist: "Distribución", reset: "🗑 Reiniciar", close: "Cerrar", pct: "de rendimiento", credit: "Hecho con ❤ por", copied: "¡Copiado al portapapeles!", hint: "💡 Ver Pista (Año/Álbum)", watchMV: "🎬 Ver MV en YouTube", listenAudio: "🎵 Escuchar en YouTube Music", dailyBanner: "📅 Desafío Diario de Hoy", practiceBanner: "♾️ Modo Práctica (Ilimitado)", dailyBtn: "📅 Diario", practiceBtn: "♾️ Práctica", statsTitle: "Estadísticas", newSong: "Nueva Canción" }
+    PT: { title: "IU Heardle — Adivinhe a Música", status: "Pronto! Clique ▶", placeholder: "seu palpite aqui…", skip: "⏭ Pular (+1s)", confirm: "✓ Confirmar", won: "🎉 Você acertou!", lost: "😔 Não foi dessa vez!", playAgain: "🔄 Jogar Novamente", stats: "📊 Estatísticas", labels: ["Partidas", "Vitórias", "Sequência", "Melhor"], dist: "Distribuição", reset: "🗑 Resetar", close: "Fechar", pct: "de aproveitamento", credit: "Feito com ❤ por", copied: "Copiado para a área de transferência!", hint: "💡 Ver Dica (Ano/Álbum)", watchMV: "🎬 Assistir MV no YouTube", listenAudio: "🎵 Ouvir no YouTube Music", dailyBanner: "📅 Desafio Diário", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diário", practiceBtn: "♾️ Prática", statsTitle: "Estatísticas", newSong: "Nova música", calTitle: "📅 Arquivo Diário", calSub: "Jogue desafios anteriores ou reveja seus resultados:", calBtnTitle: "Calendário de Desafios" },
+    EN: { title: "IU Heardle — Guess the Song", status: "Ready! Click ▶", placeholder: "your guess here…", skip: "⏭ Skip (+1s)", confirm: "✓ Confirm", won: "🎉 You got it!", lost: "😔 Not this time!", playAgain: "🔄 Play Again", stats: "📊 Statistics", labels: ["Played", "Wins", "Streak", "Best"], dist: "Distribution", reset: "🗑 Reset", close: "Close", pct: "win rate", credit: "Made with ❤ by", copied: "Copied to clipboard!", hint: "💡 Show Hint (Year/Album)", watchMV: "🎬 Watch MV on YouTube", listenAudio: "🎵 Listen on YouTube Music", dailyBanner: "📅 Daily Challenge", practiceBanner: "♾️ Practice Mode (Unlimited)", dailyBtn: "📅 Daily", practiceBtn: "♾️ Practice", statsTitle: "Statistics", newSong: "New Song", calTitle: "📅 Daily Archive", calSub: "Play past daily challenges or review your results:", calBtnTitle: "Challenge Calendar" },
+    ES: { title: "IU Heardle — Adivina la Canción", status: "¡Listo! Clic ▶", placeholder: "tu respuesta aquí…", skip: "⏭ Saltar (+1s)", confirm: "✓ Confirmar", won: "🎉 ¡Lo lograste!", lost: "😔 ¡Otra vez será!", playAgain: "🔄 Jugar de Nuevo", stats: "📊 Estadísticas", labels: ["Partidas", "Victorias", "Racha", "Mejor"], dist: "Distribución", reset: "🗑 Reiniciar", close: "Cerrar", pct: "de rendimiento", credit: "Hecho com ❤ por", copied: "¡Copiado al portapapeles!", hint: "💡 Ver Pista (Año/Álbum)", watchMV: "🎬 Ver MV en YouTube", listenAudio: "🎵 Escuchar en YouTube Music", dailyBanner: "📅 Desafío Diario", practiceBanner: "♾️ Modo Práctica (Ilimitado)", dailyBtn: "📅 Diario", practiceBtn: "♾️ Práctica", statsTitle: "Estadísticas", newSong: "Nueva Canción", calTitle: "📅 Archivo Diario", calSub: "Juega desafíos pasados o revisa tus resultados:", calBtnTitle: "Calendario de Desafíos" }
   }
 };
 
@@ -53,6 +53,15 @@ function getSystemLanguage() {
   return 'EN';
 }
 
+function getDailyDateString(offsetDays = 0) {
+  const d = new Date();
+  if (offsetDays !== 0) d.setDate(d.getDate() - offsetDays);
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
 const STATE = {
   song: null,
   attempt: 0,
@@ -64,6 +73,7 @@ const STATE = {
   lang: localStorage.getItem('iu-heardle-lang') || getSystemLanguage(),
   theme: localStorage.getItem(CONFIG.KEYS.THEME) || 'dark',
   mode: localStorage.getItem(CONFIG.KEYS.MODE) || 'daily',
+  dailyDate: getDailyDateString(),
   volume: parseFloat(localStorage.getItem(CONFIG.KEYS.VOLUME)) || 1.0,
   isMuted: false,
   artworkUrl: null,
@@ -88,14 +98,6 @@ function getYouTubeLink(song) {
 function getSongYear(song) {
   if (!song) return '----';
   return song.year || '2017';
-}
-
-function getDailyDateString() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, '0');
-  const day = String(now.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
 }
 
 function getDailySongIndex(dateStr) {
@@ -167,6 +169,10 @@ function initUI() {
       }
     };
   }
+
+  // Calendar Archive Modal
+  if (DOM.get('calendarBtn')) DOM.get('calendarBtn').onclick = openCalendarModal;
+  if (DOM.get('calendarCloseBtn')) DOM.get('calendarCloseBtn').onclick = () => DOM.get('calendarModal').classList.remove('show');
 }
 
 function updateVolIcon() {
@@ -214,6 +220,9 @@ function setLanguage(l) {
   if(DOM.get('modePracticeBtn')) DOM.get('modePracticeBtn').textContent = txt.practiceBtn;
   if(DOM.get('statsBtn')) DOM.get('statsBtn').title = txt.statsTitle;
   if(DOM.get('newBtn')) DOM.get('newBtn').title = txt.newSong;
+  if(DOM.get('calendarBtn')) DOM.get('calendarBtn').title = txt.calBtnTitle;
+  if(DOM.get('calendarTitle')) DOM.get('calendarTitle').textContent = txt.calTitle;
+  if(DOM.get('calendarSub')) DOM.get('calendarSub').textContent = txt.calSub;
   DOM.qsa('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.val === l));
   updateDailyBannerText();
 }
@@ -221,7 +230,7 @@ function setLanguage(l) {
 function updateDailyBannerText() {
   const bannerText = DOM.get('dailyBannerText');
   if (!bannerText) return;
-  const dateStr = getDailyDateString();
+  const dateStr = STATE.dailyDate || getDailyDateString();
   if (STATE.mode === 'daily') {
     bannerText.textContent = `${i18n('dailyBanner')} (${dateStr})`;
   } else {
@@ -303,11 +312,11 @@ function init() {
   if (hintBox) hintBox.style.display = 'none';
 
   if (STATE.mode === 'daily') {
-    const dateStr = getDailyDateString();
+    const dateStr = STATE.dailyDate || getDailyDateString();
     const idx = getDailySongIndex(dateStr);
     STATE.song = musicasIU[idx];
     
-    // Check if daily game state exists for today
+    // Check if daily game state exists for date
     const savedDaily = localStorage.getItem(`iu-heardle-daily-${dateStr}`);
     if (savedDaily) {
       try {
@@ -375,7 +384,7 @@ function nextTurn(guessVal, skipped = false) {
   
   // Save Daily Mode State
   if (STATE.mode === 'daily') {
-    const dateStr = getDailyDateString();
+    const dateStr = STATE.dailyDate || getDailyDateString();
     localStorage.setItem(`iu-heardle-daily-${dateStr}`, JSON.stringify({
       attempt: STATE.attempt,
       guesses: STATE.guesses,
@@ -442,10 +451,69 @@ async function finishGame(won, restored = false) {
 }
 
 function shareResults() {
-  const modeTag = STATE.mode === 'daily' ? `Daily (${getDailyDateString()})` : 'Practice';
+  const modeTag = STATE.mode === 'daily' ? `Daily (${STATE.dailyDate})` : 'Practice';
   const blocks = STATE.guesses.map(g => g.correct ? '🟩' : g.skipped ? '🟨' : '🟥').join('');
   const text = `🎵 IU Heardle [${modeTag}] - ${STATE.guesses[STATE.guesses.length-1]?.correct ? STATE.guesses.length : 'X'}/6\n${blocks}\n👉 https://kpopiuheardle.vercel.app`;
   navigator.clipboard.writeText(text).then(() => alert(i18n('copied') || "Copiado!"));
+}
+
+// ─── CALENDAR ARCHIVE LOGIC ───
+function openCalendarModal() {
+  const grid = DOM.get('calendarGrid');
+  if (!grid) return;
+  const todayStr = getDailyDateString();
+  const daysList = [];
+
+  for (let i = 0; i < 24; i++) {
+    daysList.push(getDailyDateString(i));
+  }
+
+  grid.innerHTML = daysList.map(dStr => {
+    const parts = dStr.split('-');
+    const displayDate = `${parts[2]}/${parts[1]}`;
+    const rawSaved = localStorage.getItem(`iu-heardle-daily-${dStr}`);
+    let statusCls = 'status-pending';
+    let statusText = '▶ Jogar';
+
+    if (rawSaved) {
+      try {
+        const parsed = JSON.parse(rawSaved);
+        const lastGuess = parsed.guesses && parsed.guesses[parsed.guesses.length - 1];
+        if (parsed.over) {
+          if (lastGuess && lastGuess.correct) {
+            statusCls = 'status-win';
+            statusText = `🟩 ${parsed.guesses.length}/6`;
+          } else {
+            statusCls = 'status-loss';
+            statusText = '🟥 Errou';
+          }
+        } else {
+          statusCls = 'status-today';
+          statusText = '🟨 Jogando';
+        }
+      } catch(e){}
+    } else if (dStr === todayStr) {
+      statusCls = 'status-today';
+      statusText = '⭐ Hoje';
+    }
+
+    return `<div class="cal-day-card ${statusCls}" data-date="${dStr}">
+      <span class="cal-date">${displayDate}</span>
+      <span class="cal-status-badge">${statusText}</span>
+    </div>`;
+  }).join('');
+
+  grid.onclick = e => {
+    const card = e.target.closest('.cal-day-card');
+    if (card && card.dataset.date) {
+      const selectedDate = card.dataset.date;
+      STATE.dailyDate = selectedDate;
+      DOM.get('calendarModal').classList.remove('show');
+      setGameMode('daily');
+    }
+  };
+
+  DOM.get('calendarModal').classList.add('show');
 }
 
 // ─── FEATURES: Alpha Browser & Autocomplete ───
