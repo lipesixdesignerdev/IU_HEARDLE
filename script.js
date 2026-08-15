@@ -229,12 +229,15 @@ function setLanguage(l) {
 
 function updateDailyBannerText() {
   const bannerText = DOM.get('dailyBannerText');
-  if (!bannerText) return;
+  const newBtn = DOM.get('newBtn');
   const dateStr = STATE.dailyDate || getDailyDateString();
+  
   if (STATE.mode === 'daily') {
-    bannerText.textContent = `${i18n('dailyBanner')} (${dateStr})`;
+    if (bannerText) bannerText.textContent = `${i18n('dailyBanner')} (${dateStr})`;
+    if (newBtn) newBtn.style.display = 'none';
   } else {
-    bannerText.textContent = i18n('practiceBanner');
+    if (bannerText) bannerText.textContent = i18n('practiceBanner');
+    if (newBtn) newBtn.style.display = 'inline-flex';
   }
 }
 
