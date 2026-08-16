@@ -246,6 +246,7 @@ function setGameMode(mode) {
   localStorage.setItem(CONFIG.KEYS.MODE, mode);
   DOM.get('modeDailyBtn').classList.toggle('active', mode === 'daily');
   DOM.get('modePracticeBtn').classList.toggle('active', mode === 'practice');
+  if (DOM.get('resultModal')) DOM.get('resultModal').classList.remove('show');
   
   const dailyBanner = DOM.get('dailyBanner');
   if (dailyBanner) dailyBanner.style.display = 'block';
@@ -309,7 +310,9 @@ async function fetchArtwork(song) {
 function init() {
   if (typeof musicasIU === 'undefined') return alert("Erro: database.js não encontrado!");
   STATE.over = false; STATE.attempt = 0; STATE.guesses = [];
-  if (STATE.isPlaying) pauseAudio();
+  pauseAudio();
+  STATE.audio.pause();
+  STATE.audio.currentTime = 0;
 
   const hintBox = DOM.get('hintBox');
   if (hintBox) hintBox.style.display = 'none';
@@ -330,8 +333,12 @@ function init() {
       } catch(e){}
     }
   } else {
-    // Practice Mode: Random Song
-    STATE.song = musicasIU[Math.floor(Math.random() * musicasIU.length)];
+    // Practice Mode: Pick a random song (different from current if possible)
+    let newSong;
+    do {
+      newSong = musicasIU[Math.floor(Math.random() * musicasIU.length)];
+    } while (musicasIU.length > 1 && STATE.song && newSong.title === STATE.song.title);
+    STATE.song = newSong;
   }
 
   STATE.artworkUrl = null;
@@ -699,7 +706,22 @@ DOM.get('statsBtn').onclick = () => {
 };
 DOM.get('statsCloseBtn').onclick = () => DOM.get('statsModal').classList.remove('show');
 DOM.get('statsResetBtn').onclick = () => confirm('Resetar?') && localStorage.removeItem(CONFIG.KEYS.STATS) | openStats();
-DOM.get('againBtn').onclick = DOM.get('newBtn').onclick = () => { DOM.get('resultModal').classList.remove('show'); DOM.get('ambientBg').src=''; init(); };
+function handlePlayAgain() {
+  if (DOM.get('resultModal')) DOM.get('resultModal').classList.remove('show');
+  if (DOM.get('ambientBg')) DOM.get('ambientBg').src = '';
+  pauseAudio();
+  STATE.audio.pause();
+  STATE.audio.currentTime = 0;
+
+  if (STATE.mode === 'daily') {
+    setGameMode('practice');
+  } else {
+    init();
+  }
+}
+
+DOM.get('againBtn').onclick = handlePlayAgain;
+DOM.get('newBtn').onclick = handlePlayAgain;
 if(DOM.get('shareBtn')) DOM.get('shareBtn').onclick = shareResults;
 
 window.onload = () => { initUI(); init(); };
