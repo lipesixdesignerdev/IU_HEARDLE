@@ -4,9 +4,9 @@ const CONFIG = {
   KEYS: { STATS: 'iu-heardle-stats', THEME: 'iu-heardle-theme', VOLUME: 'iu-heardle-vol', MODE: 'iu-heardle-mode' },
   THEMES: ['dark', 'light', 'neon', 'sepia', 'abyss'],
   I18N: {
-    PT: { title: "IU Heardle — Adivinhe a Música", status: "Pronto! Clique ▶", placeholder: "seu palpite aqui…", skip: "⏭ Pular (+1s)", confirm: "✓ Confirmar", won: "🎉 Você acertou!", lost: "😔 Não foi dessa vez!", playAgain: "🔄 Jogar Novamente", stats: "📊 Estatísticas", labels: ["Partidas", "Vitórias", "Sequência", "Melhor"], dist: "Distribuição", reset: "🗑 Resetar", close: "Fechar", pct: "de aproveitamento", credit: "Feito com ❤ por", copied: "Copiado para a área de transferência!", hint: "💡 Ver Dica (Ano/Álbum)", watchMV: "🎬 Assistir MV no YouTube", listenAudio: "🎵 Ouvir no YouTube Music", dailyBanner: "📅 Desafio Diário", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diário", practiceBtn: "♾️ Prática", statsTitle: "Estatísticas", newSong: "Nova música", calTitle: "📅 Arquivo Diário", calSub: "Jogue desafios anteriores ou reveja seus resultados:", calBtnTitle: "Calendário de Desafios", playFull: "Tocar Música", pauseFull: "Pausar Música" },
-    EN: { title: "IU Heardle — Guess the Song", status: "Ready! Click ▶", placeholder: "your guess here…", skip: "⏭ Skip (+1s)", confirm: "✓ Confirm", won: "🎉 You got it!", lost: "😔 Not this time!", playAgain: "🔄 Play Again", stats: "📊 Statistics", labels: ["Played", "Wins", "Streak", "Best"], dist: "Distribution", reset: "🗑 Reset", close: "Close", pct: "win rate", credit: "Made with ❤ by", copied: "Copied to clipboard!", hint: "💡 Show Hint (Year/Album)", watchMV: "🎬 Watch MV on YouTube", listenAudio: "🎵 Listen on YouTube Music", dailyBanner: "📅 Daily Challenge", practiceBanner: "♾️ Practice Mode (Unlimited)", dailyBtn: "📅 Daily", practiceBtn: "♾️ Practice", statsTitle: "Statistics", newSong: "New Song", calTitle: "📅 Daily Archive", calSub: "Play past daily challenges or review your results:", calBtnTitle: "Challenge Calendar", playFull: "Play Song", pauseFull: "Pause Song" },
-    ES: { title: "IU Heardle — Adivina la Canción", status: "¡Listo! Clic ▶", placeholder: "tu respuesta aquí…", skip: "⏭ Saltar (+1s)", confirm: "✓ Confirmar", won: "🎉 ¡Lo lograste!", lost: "😔 ¡Otra vez será!", playAgain: "🔄 Jugar de Nuevo", stats: "📊 Estadísticas", labels: ["Partidas", "Victorias", "Racha", "Mejor"], dist: "Distribución", reset: "🗑 Reiniciar", close: "Cerrar", pct: "de rendimiento", credit: "Hecho com ❤ por", copied: "¡Copiado al portapapeles!", hint: "💡 Ver Pista (Año/Álbum)", watchMV: "🎬 Ver MV en YouTube", listenAudio: "🎵 Escuchar en YouTube Music", dailyBanner: "📅 Desafío Diario", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diario", practiceBtn: "♾️ Práctica", statsTitle: "Estadísticas", newSong: "Nueva Canción", calTitle: "📅 Archivo Diario", calSub: "Juega desafíos pasados o revisa tus resultados:", calBtnTitle: "Calendario de Desafíos", playFull: "Reproducir Canción", pauseFull: "Pausar Canción" }
+    PT: { skipFinal: '⏭ Revelar resposta', skipped: 'Pulou', yearLabel: 'Ano', albumLabel: 'Álbum', invalidGuess: 'Selecione uma música válida da lista.', audioError: 'Não foi possível tocar o áudio. Tente novamente.', loading: 'Carregando áudio…', calPlay: '▶ Jogar', calLost: '🟥 Errou', calPlaying: '🟨 Jogando', calToday: '⭐ Hoje', resetConfirm: 'Resetar estatísticas?', shareError: 'Não foi possível copiar o resultado.', title: "IU Heardle — Adivinhe a Música", status: "Pronto! Clique ▶", placeholder: "seu palpite aqui…", skip: "⏭ Pular (+{seconds}s)", confirm: "✓ Confirmar", won: "🎉 Você acertou!", lost: "😔 Não foi dessa vez!", playAgain: "🔄 Jogar Novamente", stats: "📊 Estatísticas", labels: ["Partidas", "Vitórias", "Sequência", "Melhor"], dist: "Distribuição", reset: "🗑 Resetar", close: "Fechar", pct: "de aproveitamento", credit: "Feito com ❤ por", copied: "Copiado para a área de transferência!", hint: "💡 Ver Dica (Ano/Álbum)", watchMV: "🎬 Assistir MV no YouTube", listenAudio: "🎵 Ouvir no YouTube Music", dailyBanner: "📅 Desafio Diário", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diário", practiceBtn: "♾️ Prática", statsTitle: "Estatísticas", newSong: "Nova música", calTitle: "📅 Arquivo Diário", calSub: "Jogue desafios anteriores ou reveja seus resultados:", calBtnTitle: "Calendário de Desafios", playFull: "Tocar Música", pauseFull: "Pausar Música" },
+    EN: { skipFinal: '⏭ Reveal answer', skipped: 'Skipped', yearLabel: 'Year', albumLabel: 'Album', invalidGuess: 'Select a valid song from the list.', audioError: 'Could not play audio. Please try again.', loading: 'Loading audio…', calPlay: '▶ Play', calLost: '🟥 Lost', calPlaying: '🟨 In progress', calToday: '⭐ Today', resetConfirm: 'Reset statistics?', shareError: 'Could not copy the result.', title: "IU Heardle — Guess the Song", status: "Ready! Click ▶", placeholder: "your guess here…", skip: "⏭ Skip (+{seconds}s)", confirm: "✓ Confirm", won: "🎉 You got it!", lost: "😔 Not this time!", playAgain: "🔄 Play Again", stats: "📊 Statistics", labels: ["Played", "Wins", "Streak", "Best"], dist: "Distribution", reset: "🗑 Reset", close: "Close", pct: "win rate", credit: "Made with ❤ by", copied: "Copied to clipboard!", hint: "💡 Show Hint (Year/Album)", watchMV: "🎬 Watch MV on YouTube", listenAudio: "🎵 Listen on YouTube Music", dailyBanner: "📅 Daily Challenge", practiceBanner: "♾️ Practice Mode (Unlimited)", dailyBtn: "📅 Daily", practiceBtn: "♾️ Practice", statsTitle: "Statistics", newSong: "New Song", calTitle: "📅 Daily Archive", calSub: "Play past daily challenges or review your results:", calBtnTitle: "Challenge Calendar", playFull: "Play Song", pauseFull: "Pause Song" },
+    ES: { skipFinal: '⏭ Revelar respuesta', skipped: 'Saltó', yearLabel: 'Año', albumLabel: 'Álbum', invalidGuess: 'Selecciona una canción válida de la lista.', audioError: 'No se pudo reproducir el audio. Inténtalo de nuevo.', loading: 'Cargando audio…', calPlay: '▶ Jugar', calLost: '🟥 Perdió', calPlaying: '🟨 En progreso', calToday: '⭐ Hoy', resetConfirm: '¿Reiniciar estadísticas?', shareError: 'No se pudo copiar el resultado.', title: "IU Heardle — Adivina la Canción", status: "¡Listo! Clic ▶", placeholder: "tu respuesta aquí…", skip: "⏭ Saltar (+{seconds}s)", confirm: "✓ Confirmar", won: "🎉 ¡Lo lograste!", lost: "😔 ¡Otra vez será!", playAgain: "🔄 Jugar de Nuevo", stats: "📊 Estadísticas", labels: ["Partidas", "Victorias", "Racha", "Mejor"], dist: "Distribución", reset: "🗑 Reiniciar", close: "Cerrar", pct: "de rendimiento", credit: "Hecho com ❤ por", copied: "¡Copiado al portapapeles!", hint: "💡 Ver Pista (Año/Álbum)", watchMV: "🎬 Ver MV en YouTube", listenAudio: "🎵 Escuchar en YouTube Music", dailyBanner: "📅 Desafío Diario", practiceBanner: "♾️ Modo Prática (Ilimitado)", dailyBtn: "📅 Diario", practiceBtn: "♾️ Práctica", statsTitle: "Estadísticas", newSong: "Nueva Canción", calTitle: "📅 Archivo Diario", calSub: "Juega desafíos pasados o revisa tus resultados:", calBtnTitle: "Calendario de Desafíos", playFull: "Reproducir Canción", pauseFull: "Pausar Canción" }
   }
 };
 
@@ -74,14 +74,18 @@ const STATE = {
   theme: localStorage.getItem(CONFIG.KEYS.THEME) || 'dark',
   mode: localStorage.getItem(CONFIG.KEYS.MODE) || 'daily',
   dailyDate: getDailyDateString(),
-  volume: parseFloat(localStorage.getItem(CONFIG.KEYS.VOLUME)) || 1.0,
+  volume: localStorage.getItem(CONFIG.KEYS.VOLUME) === null ? 1 : Math.min(1, Math.max(0, Number(localStorage.getItem(CONFIG.KEYS.VOLUME)) || 0)),
   isMuted: false,
   artworkUrl: null,
-  artworkPromise: null
+  artworkPromise: null,
+  audioPromise: null,
+  gameId: 0,
+  playId: 0
 };
 
 const DOM = { get: id => document.getElementById(id), qs: s => document.querySelector(s), qsa: s => document.querySelectorAll(s) };
-const i18n = k => CONFIG.I18N[STATE.lang][k];
+const i18n = k => (CONFIG.I18N[STATE.lang] || CONFIG.I18N.EN)[k];
+const escapeHTML = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 
 // ─── UTILITIES & HELPERS ───
 function getYouTubeLink(song) {
@@ -135,10 +139,12 @@ function initUI() {
       STATE.volume = parseFloat(e.target.value);
       STATE.audio.volume = STATE.volume;
       STATE.isMuted = STATE.volume === 0;
+      STATE.audio.muted = STATE.isMuted;
       localStorage.setItem(CONFIG.KEYS.VOLUME, STATE.volume);
       updateVolIcon();
     };
   }
+  updateVolIcon();
   const volBtn = DOM.get('volBtn');
   if (volBtn) {
     volBtn.onclick = () => {
@@ -149,7 +155,7 @@ function initUI() {
   }
 
   // Mode Switcher
-  DOM.get('modeDailyBtn').onclick = () => setGameMode('daily');
+  DOM.get('modeDailyBtn').onclick = () => { STATE.dailyDate = getDailyDateString(); setGameMode('daily'); };
   DOM.get('modePracticeBtn').onclick = () => setGameMode('practice');
   setGameMode(STATE.mode);
 
@@ -162,9 +168,7 @@ function initUI() {
       if (isShow) {
         hintBox.style.display = 'none';
       } else {
-        const year = getSongYear(STATE.song);
-        const album = STATE.song ? STATE.song.album : 'IU Album';
-        DOM.get('hintContent').textContent = `💡 Ano: ${year} | Álbum: ${album}`;
+        updateHint();
         hintBox.style.display = 'block';
       }
     };
@@ -204,6 +208,7 @@ function setTheme(t) {
 }
 
 function setLanguage(l) {
+  l = CONFIG.I18N[l] ? l : getSystemLanguage();
   STATE.lang = l;
   localStorage.setItem('iu-heardle-lang', l);
   document.documentElement.lang = l.toLowerCase();
@@ -211,7 +216,7 @@ function setLanguage(l) {
   document.title = txt.title;
   DOM.get('statusText').textContent = txt.status; 
   DOM.get('songInput').placeholder = txt.placeholder;
-  DOM.get('skipBtn').textContent = txt.skip; 
+  updateSkipLabel();
   DOM.get('confirmBtn').textContent = txt.confirm;
   if(DOM.get('creditText')) DOM.get('creditText').textContent = txt.credit;
   DOM.get('againBtn').textContent = txt.playAgain;
@@ -225,6 +230,15 @@ function setLanguage(l) {
   if(DOM.get('calendarSub')) DOM.get('calendarSub').textContent = txt.calSub;
   DOM.qsa('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.val === l));
   updateDailyBannerText();
+  updateHint();
+  updateGameView();
+  DOM.get('calendarCloseBtn').textContent = txt.close;
+  if (DOM.get('calendarModal').classList.contains('show')) openCalendarModal();
+  if (STATE.over) {
+    DOM.get('resultTitle').textContent = i18n(STATE.guesses.at(-1)?.correct ? 'won' : 'lost');
+    updateModalPlayBtn(!STATE.audio.paused);
+    DOM.get('ytBtnText').textContent = i18n(getYouTubeLink(STATE.song).isMV ? 'watchMV' : 'listenAudio');
+  }
 }
 
 function updateDailyBannerText() {
@@ -256,14 +270,24 @@ function setGameMode(mode) {
 
 // ─── AUDIO BLOB LOADER ───
 let _currentBlobUrl = null;
+let audioController = null;
 async function loadAudioBlob(src) {
+  audioController?.abort();
+  const controller = new AbortController();
+  audioController = controller;
+  STATE.audio.removeAttribute('src');
+  STATE.audio.load();
+  if (_currentBlobUrl) URL.revokeObjectURL(_currentBlobUrl);
+  _currentBlobUrl = null;
   try {
-    if (_currentBlobUrl) { URL.revokeObjectURL(_currentBlobUrl); _currentBlobUrl = null; }
-    const res = await fetch(src);
+    const res = await fetch(src, { signal: controller.signal });
+    if (!res.ok) throw new Error('Audio HTTP ' + res.status);
     const blob = await res.blob();
+    if (controller !== audioController) return;
     _currentBlobUrl = URL.createObjectURL(blob);
     STATE.audio.src = _currentBlobUrl;
-  } catch(e) {
+  } catch (e) {
+    if (controller !== audioController || controller.signal.aborted) return;
     STATE.audio.src = src;
   }
 }
@@ -271,6 +295,7 @@ async function loadAudioBlob(src) {
 // ─── ARTWORK PREFETCH ───
 async function fetchArtwork(song) {
   if (!song) return null;
+  if (song.cover) return song.cover;
   const cleanTitle = song.title.replace(/\([^)]+\)/g, '').trim();
   const queries = [
     `artist:"IU" track:"${cleanTitle}"`,
@@ -279,10 +304,12 @@ async function fetchArtwork(song) {
   ];
   const fetchDeezerJSONP = (q) => new Promise((resolve) => {
     const cb = 'dz_' + Math.floor(Math.random()*1000000);
-    window[cb] = (data) => { delete window[cb]; document.head.removeChild(s); resolve(data); };
+    const finish = data => { clearTimeout(timeout); delete window[cb]; s.remove(); resolve(data); };
+    const timeout = setTimeout(() => finish({data:[]}), 4000);
+    window[cb] = finish;
     const s = document.createElement('script');
     s.src = `https://api.deezer.com/search?q=${encodeURIComponent(q)}&limit=3&output=jsonp&callback=${cb}`;
-    s.onerror = () => { delete window[cb]; document.head.removeChild(s); resolve({data:[]}); };
+    s.onerror = () => finish({data:[]});
     document.head.appendChild(s);
   });
 
@@ -296,7 +323,7 @@ async function fetchArtwork(song) {
     } catch(e) { }
   }
   try {
-    const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent('IU ' + cleanTitle)}&entity=song&country=kr&limit=5`);
+    const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent('IU ' + cleanTitle)}&entity=song&country=kr&limit=5`, { signal: AbortSignal.timeout(4000) });
     const data = await res.json();
     if (data.results && data.results.length > 0) {
       const match = data.results.find(r => r.artistName && r.artistName.includes('IU')) || data.results[0];
@@ -309,6 +336,7 @@ async function fetchArtwork(song) {
 // ─── GAME CORE ───
 function init() {
   if (typeof musicasIU === 'undefined') return alert("Erro: database.js não encontrado!");
+  const gameId = ++STATE.gameId;
   STATE.over = false; STATE.attempt = 0; STATE.guesses = [];
   pauseAudio();
   STATE.audio.pause();
@@ -342,12 +370,14 @@ function init() {
   }
 
   STATE.artworkUrl = null;
-  STATE.artworkPromise = fetchArtwork(STATE.song).then(url => { STATE.artworkUrl = url; });
-  loadAudioBlob(STATE.song.file);
+  STATE.artworkPromise = fetchArtwork(STATE.song).then(url => { if (gameId === STATE.gameId) STATE.artworkUrl = url; return url; });
+  STATE.audioPromise = loadAudioBlob(STATE.song.file);
 
   DOM.get('waveform').innerHTML = '<div class="wave-bar" style="height:10px;"></div>'.repeat(25);
   buildAlphaBrowser();
-  DOM.get('songInput').value = ''; DOM.get('timerFill').style.width = '0%'; DOM.get('timerLabel').textContent = '0.0s / 1s';
+  resetAlpha();
+  DOM.get('statusText').textContent = i18n('status');
+  updateTimer(0);
   updateGameView();
 
   if (STATE.over) {
@@ -356,31 +386,92 @@ function init() {
   }
 }
 
-function handlePlay() {
-  if (!STATE.song || STATE.isPlaying) return pauseAudio();
-  const dur = CONFIG.DURATIONS[Math.min(STATE.attempt, 5)];
-  STATE.audio.currentTime = 0;
-  STATE.audio.play().catch(() => DOM.get('statusText').textContent = 'Erro no áudio');
-  STATE.isPlaying = true; DOM.get('playBtn').textContent = '⏸'; DOM.get('waveform').classList.add('playing');
-  
-  let el = 0;
-  STATE.timer = setInterval(() => {
-    el += 0.1;
-    DOM.get('timerFill').style.width = Math.min((el/dur)*100, 100) + '%';
-    DOM.get('timerLabel').textContent = `${el.toFixed(1)}s / ${dur}s`;
-    if (el >= dur) pauseAudio();
-  }, 100);
+function clipDuration() {
+  return CONFIG.DURATIONS[Math.min(STATE.attempt, CONFIG.DURATIONS.length - 1)];
+}
+
+function updateTimer(elapsed = 0) {
+  const dur = clipDuration();
+  const time = Math.min(elapsed, dur);
+  DOM.get('timerFill').style.width = `${time / dur * 100}%`;
+  DOM.get('timerLabel').textContent = `${time.toFixed(1)}s / ${dur}s`;
+}
+
+function updateSkipLabel() {
+  const next = CONFIG.DURATIONS[STATE.attempt + 1];
+  DOM.get('skipBtn').textContent = next === undefined ? i18n('skipFinal') : i18n('skip').replace('{seconds}', next - clipDuration());
+}
+
+function updateHint() {
+  if (STATE.song) DOM.get('hintContent').textContent = `💡 ${i18n('yearLabel')}: ${getSongYear(STATE.song)} | ${i18n('albumLabel')}: ${STATE.song.album || '—'}`;
+}
+
+async function handlePlay() {
+  if (!STATE.song || STATE.over) return;
+  if (STATE.isPlaying) return pauseAudio();
+  const playId = ++STATE.playId;
+  STATE.isPlaying = true;
+  DOM.get('playBtn').textContent = '⏸';
+  DOM.get('statusText').textContent = i18n('loading');
+  try {
+    await STATE.audioPromise;
+    if (playId !== STATE.playId) return;
+    STATE.audio.currentTime = 0;
+    updateTimer(0);
+    await STATE.audio.play();
+    if (playId !== STATE.playId) return;
+    DOM.get('statusText').textContent = i18n('status');
+    DOM.get('waveform').classList.add('playing');
+    STATE.timer = setInterval(() => {
+      updateTimer(STATE.audio.currentTime);
+      if (STATE.audio.currentTime >= clipDuration()) pauseAudio();
+    }, 25);
+  } catch (e) {
+    if (playId !== STATE.playId) return;
+    pauseAudio();
+    DOM.get('statusText').textContent = i18n('audioError');
+  }
 }
 
 function pauseAudio() {
-  STATE.audio.pause(); clearInterval(STATE.timer); STATE.isPlaying = false;
+  STATE.playId++;
+  STATE.audio.pause(); clearInterval(STATE.timer); STATE.timer = null; STATE.isPlaying = false;
   DOM.get('playBtn').textContent = '▶'; DOM.get('waveform').classList.remove('playing');
+  updateModalPlayBtn(false);
 }
+
+async function playFullAudio() {
+  const playId = ++STATE.playId;
+  try {
+    await STATE.audioPromise;
+    if (playId !== STATE.playId || !STATE.over) return;
+    await STATE.audio.play();
+    if (playId === STATE.playId) updateModalPlayBtn(true);
+  } catch (e) {
+    if (playId !== STATE.playId) return;
+    updateModalPlayBtn(false);
+    DOM.get('statusText').textContent = i18n('audioError');
+  }
+}
+
+STATE.audio.onended = () => pauseAudio();
+STATE.audio.onerror = () => { pauseAudio(); DOM.get('statusText').textContent = i18n('audioError'); };
 
 function nextTurn(guessVal, skipped = false) {
   if (STATE.over) return;
+  if (!skipped) {
+    const song = musicasIU.find(s => s.title.toLowerCase() === guessVal.trim().toLowerCase());
+    if (!song) {
+      DOM.get('statusText').textContent = i18n('invalidGuess');
+      return;
+    }
+    guessVal = song.title;
+  }
+  pauseAudio();
+  DOM.get('statusText').textContent = i18n('status');
+  DOM.get('autocomplete').classList.remove('show');
   const correct = !skipped && guessVal.toLowerCase() === STATE.song.title.toLowerCase();
-  STATE.guesses.push({ title: skipped ? 'Pulou' : guessVal, correct, skipped });
+  STATE.guesses.push({ title: skipped ? '' : guessVal, correct, skipped });
   
   if (correct || !skipped) DOM.get('songInput').value = '';
   
@@ -402,17 +493,19 @@ function nextTurn(guessVal, skipped = false) {
     }));
   }
 
+  updateTimer(0);
   updateGameView();
   if (correct || STATE.attempt >= 6) finishGame(correct);
 }
 
 function updateGameView() {
+  updateSkipLabel();
   DOM.get('barsContainer').innerHTML = Array(6).fill(0).map((_, i) => {
     const g = STATE.guesses[i];
     const cls = !g ? '' : g.correct ? ' correct' : g.skipped ? ' skipped' : ' wrong';
     return `<div class="bar${cls}"></div>`;
   }).join('');
-  DOM.get('guessesList').innerHTML = STATE.guesses.map(g => `<div class="guess-item">${g.title}</div>`).join('');
+  DOM.get('guessesList').innerHTML = STATE.guesses.map(g => `<div class="guess-item">${escapeHTML(g.skipped ? i18n('skipped') : g.title)}</div>`).join('');
 }
 
 function updateModalPlayBtn(isPlaying) {
@@ -429,6 +522,7 @@ function updateModalPlayBtn(isPlaying) {
 }
 
 async function finishGame(won, restored = false) {
+  const gameId = STATE.gameId;
   STATE.over = true; pauseAudio();
   
   if (!restored) {
@@ -446,21 +540,14 @@ async function finishGame(won, restored = false) {
 
   // Full Audio Autoplay on Win/Finish
   STATE.audio.currentTime = 0;
-  STATE.audio.play().then(() => {
-    updateModalPlayBtn(true);
-  }).catch(() => {
-    updateModalPlayBtn(false);
-  });
+  updateModalPlayBtn(false);
+  if (!restored) playFullAudio();
 
   const modalPlayBtn = DOM.get('modalPlayBtn');
   if (modalPlayBtn) {
     modalPlayBtn.onclick = () => {
-      if (STATE.audio.paused) {
-        STATE.audio.play().then(() => updateModalPlayBtn(true));
-      } else {
-        STATE.audio.pause();
-        updateModalPlayBtn(false);
-      }
+      if (STATE.audio.paused) playFullAudio();
+      else pauseAudio();
     };
   }
 
@@ -475,16 +562,19 @@ async function finishGame(won, restored = false) {
 
   const albumArt = DOM.get('albumArt');
   const albumFallback = DOM.get('albumFallback');
-  albumArt.style.display = '';
-  albumFallback.style.display = 'none';
+  albumArt.removeAttribute('src');
+  albumArt.style.display = 'none';
+  albumFallback.style.display = 'flex';
   albumArt.onerror = () => { albumArt.style.display = 'none'; albumFallback.style.display = 'flex'; };
 
   if (won && !restored && typeof confetti === 'function') confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, colors: ['#00d4ff', '#0070f3', '#ff00ff', '#ffffff'] });
   if (DOM.get('shareBtn')) DOM.get('shareBtn').style.display = 'flex';
 
-  await STATE.artworkPromise;
-  const url = STATE.artworkUrl;
+  const url = await STATE.artworkPromise;
+  if (gameId !== STATE.gameId || !STATE.over) return;
   if (url) {
+    albumArt.style.display = '';
+    albumFallback.style.display = 'none';
     albumArt.src = url;
     if (DOM.get('ambientBg')) DOM.get('ambientBg').src = url;
   } else {
@@ -497,7 +587,7 @@ function shareResults() {
   const modeTag = STATE.mode === 'daily' ? `Daily (${STATE.dailyDate})` : 'Practice';
   const blocks = STATE.guesses.map(g => g.correct ? '🟩' : g.skipped ? '🟨' : '🟥').join('');
   const text = `🎵 IU Heardle [${modeTag}] - ${STATE.guesses[STATE.guesses.length-1]?.correct ? STATE.guesses.length : 'X'}/6\n${blocks}\n👉 https://kpopiuheardle.vercel.app`;
-  navigator.clipboard.writeText(text).then(() => alert(i18n('copied') || "Copiado!"));
+  Promise.resolve().then(() => navigator.clipboard.writeText(text)).then(() => alert(i18n('copied'))).catch(() => alert(i18n('shareError')));
 }
 
 // ─── CALENDAR ARCHIVE LOGIC ───
@@ -516,7 +606,7 @@ function openCalendarModal() {
     const displayDate = `${parts[2]}/${parts[1]}`;
     const rawSaved = localStorage.getItem(`iu-heardle-daily-${dStr}`);
     let statusCls = 'status-pending';
-    let statusText = '▶ Jogar';
+    let statusText = i18n('calPlay');
 
     if (rawSaved) {
       try {
@@ -528,16 +618,16 @@ function openCalendarModal() {
             statusText = `🟩 ${parsed.guesses.length}/6`;
           } else {
             statusCls = 'status-loss';
-            statusText = '🟥 Errou';
+            statusText = i18n('calLost');
           }
         } else {
           statusCls = 'status-today';
-          statusText = '🟨 Jogando';
+          statusText = i18n('calPlaying');
         }
       } catch(e){}
     } else if (dStr === todayStr) {
       statusCls = 'status-today';
-      statusText = '⭐ Hoje';
+      statusText = i18n('calToday');
     }
 
     return `<div class="cal-day-card ${statusCls}" data-date="${dStr}">
@@ -705,7 +795,9 @@ DOM.get('statsBtn').onclick = () => {
     openStats();
 };
 DOM.get('statsCloseBtn').onclick = () => DOM.get('statsModal').classList.remove('show');
-DOM.get('statsResetBtn').onclick = () => confirm('Resetar?') && localStorage.removeItem(CONFIG.KEYS.STATS) | openStats();
+DOM.get('statsResetBtn').onclick = () => {
+  if (confirm(i18n('resetConfirm'))) { localStorage.removeItem(CONFIG.KEYS.STATS); openStats(); }
+};
 function handlePlayAgain() {
   if (DOM.get('resultModal')) DOM.get('resultModal').classList.remove('show');
   if (DOM.get('ambientBg')) DOM.get('ambientBg').src = '';
@@ -724,4 +816,4 @@ DOM.get('againBtn').onclick = handlePlayAgain;
 DOM.get('newBtn').onclick = handlePlayAgain;
 if(DOM.get('shareBtn')) DOM.get('shareBtn').onclick = shareResults;
 
-window.onload = () => { initUI(); init(); };
+window.onload = () => { initUI(); };

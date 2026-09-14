@@ -4,7 +4,7 @@
   "description": "",
   "main": "database.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test tests/*.test.js",
     "build": "node build.js",
     "dev": "npx http-server . -p 3799 --cors -o"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/lipesixdesignerdev/kpopiuheardle#readme",
   "devDependencies": {
-    "javascript-obfuscator": "^5.4.1"
+    "javascript-obfuscator": "^5.4.1",
+    "jsdom": "^26.1.0"
   }
 }
