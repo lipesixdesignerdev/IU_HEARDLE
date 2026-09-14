@@ -2,11 +2,11 @@
   {
     "title": "Unknown Planet",
     "status": "pending",
-    "reason": "Command '['/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', '-m', 'yt_dlp', '--skip-download', '--dump-single-json', '--no-playlist', '--socket-timeout', '25', '--retries', '1', 'https://www.youtube.com/watch?v=KHqDMwHpdy8']' returned non-zero exit status 1."
+    "reason": "WARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] KHqDMwHpdy8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
   },
   {
     "title": "Dear my crazy soulmate",
     "status": "pending",
-    "reason": "Command '['/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', '-m', 'yt_dlp', '--skip-download', '--dump-single-json', '--no-playlist', '--socket-timeout', '25', '--retries', '1', 'https://www.youtube.com/watch?v=IHIt9S2DWcQ']' returned non-zero exit status 1."
+    "reason": "WARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] IHIt9S2DWcQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
   }
 ]
