@@ -5,7 +5,7 @@ function renderDatabase(catalog) {
   const songs = catalog.songs.map(song => {
     const album = catalog.albums[song.album];
     if (!album) throw new Error('Unreviewed album: ' + song.album);
-    return {...song, year: album.year, cover: album.cover, coverFallback: album.remoteCover};
+    return {...song, year: album.year, cover: album.cover};
   });
   return '// Generated from catalog/catalog.json. Run node generate-db.js.\n' +
     'const musicasIU = ' + JSON.stringify(songs, null, 2) + ';\n' +

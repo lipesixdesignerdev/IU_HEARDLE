@@ -5,8 +5,7 @@ const musicasIU = [
     "file": "songs/4AM.mp3",
     "title": "4AM",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "A Flower Bookmark 3",
@@ -16,16 +15,14 @@ const musicasIU = [
     "file": "songs/A Beautiful Person (Feat. Balming Tiger Feat. Balming Tiger.mp3",
     "title": "A Beautiful Person (feat. Balming Tiger)",
     "year": "2025",
-    "cover": "covers/a-flower-bookmark-3.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/d4/c1/53d4c1e4-c712-ef2b-e862-f46045fe5500/cover_KM0022858_1.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-3.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/A Dreamer (A DREAMER).mp3",
     "title": "A Dreamer (A DREAMER)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Modern Times",
@@ -35,152 +32,133 @@ const musicasIU = [
     "file": "songs/A Gloomy Clock (feat. Jong-hyun)(feat.of SHINee)).mp3",
     "title": "A Gloomy Clock (feat. Jonghyun of SHINee)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/A Lost Child (ACOUSTIC VER.) (미아 (ACOUSTIC VER.)).mp3",
     "title": "A Lost Child (ACOUSTIC VER.) (미아 (ACOUSTIC VER.))",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Love Poem - EP",
     "file": "songs/above the time (시간의 바깥).mp3",
     "title": "above the time (시간의 바깥)",
     "year": "2019",
-    "cover": "covers/love-poem-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/b8/18/b8b81899-a984-be85-5656-ec1f2fc10227/5_Love_poem.jpg/600x600bb.jpg"
+    "cover": "covers/love-poem-ep.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/Ah puh (어푸 (Ah puh)).mp3",
     "title": "Ah puh (어푸 (Ah puh))",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "A Flower Bookmark 2",
     "file": "songs/Autumn morning (가을 아침).mp3",
     "title": "Autumn morning (가을 아침)",
     "year": "2017",
-    "cover": "covers/a-flower-bookmark-2.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/12/bc/b712bc53-60c9-9f1b-0c2d-48bb294e0cbf/cover-.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-2.jpg"
   },
   {
     "album": "Modern Times",
     "file": "songs/Bad Day (싫은 날).mp3",
     "title": "Bad Day (싫은 날)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "BBIBBI - Single",
     "file": "songs/BBIBBI (삐삐).mp3",
     "title": "BBIBBI (삐삐)",
     "year": "2018",
-    "cover": "covers/bbibbi-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8a/2a/fb/8a2afbb2-728b-f160-8210-ba43146e9d83/cover-_DS.jpg/600x600bb.jpg"
+    "cover": "covers/bbibbi-single.jpg"
   },
   {
     "album": "Can You Hear Me? - EP",
     "file": "songs/Beautiful Dancer.mp3",
     "title": "Beautiful Dancer",
     "year": "2013",
-    "cover": "covers/can-you-hear-me-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/0f/65/e5/0f65e5ff-3b73-cd42-70e3-9dec9cbfdafb/05099995889559.jpg/600x600bb.jpg"
+    "cover": "covers/can-you-hear-me-ep.jpg"
   },
   {
     "album": "Modern Times",
     "file": "songs/Between the lips (50cm) (입술 사이(50cm)).mp3",
     "title": "Between the lips (50cm) (입술 사이(50cm))",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Black Out (Black Out).mp3",
     "title": "Black Out (Black Out)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "Love Poem - EP",
     "file": "songs/Blueming (Blueming).mp3",
     "title": "Blueming (Blueming)",
     "year": "2019",
-    "cover": "covers/love-poem-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/b8/18/b8b81899-a984-be85-5656-ec1f2fc10227/5_Love_poem.jpg/600x600bb.jpg"
+    "cover": "covers/love-poem-ep.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Boo (BOO).mp3",
     "title": "Boo (BOO)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "A Flower Bookmark",
     "file": "songs/Boom Ladi Dadi (꿍따리 샤바라 (feat. 클론)).mp3",
     "title": "Boom Ladi Dadi (꿍따리 샤바라 (feat. 클론))",
     "year": "2014",
-    "cover": "covers/a-flower-bookmark.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark.jpg"
   },
   {
     "album": "A Flower Bookmark 2",
     "file": "songs/By the stream (개여울).mp3",
     "title": "By the stream (개여울)",
     "year": "2017",
-    "cover": "covers/a-flower-bookmark-2.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/12/bc/b712bc53-60c9-9f1b-0c2d-48bb294e0cbf/cover-.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-2.jpg"
   },
   {
     "album": "Bye, Summer - Single",
     "file": "songs/Bye, Summer (바이, 썸머).mp3",
     "title": "Bye, Summer (바이, 썸머)",
     "year": "2025",
-    "cover": "covers/bye-summer-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/df/13/50/df13503f-a204-84f0-8cd7-889e365bfac7/cover_KM0023404_1.jpg/600x600bb.jpg"
+    "cover": "covers/bye-summer-single.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Can't Love You Anymore (With OHHYUK).mp3",
     "title": "Can't Love You Anymore (With OHHYUK)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "Celebrity - Single",
     "file": "songs/Celebrity (Celebrity).mp3",
     "title": "Celebrity (Celebrity)",
     "year": "2021",
-    "cover": "covers/celebrity-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/02/32/09/02320995-35fb-e63f-fb52-76595b70ed45/1.jpg/600x600bb.jpg"
+    "cover": "covers/celebrity-single.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/Coin (Coin).mp3",
     "title": "Coin (Coin)",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "Modern Times – Epilogue",
     "file": "songs/Crayon (크레파스).mp3",
     "title": "Crayon (크레파스)",
     "year": "2013",
-    "cover": "covers/modern-times-epilogue.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/7e/c4/63/7ec46341-e1c2-0e22-00a9-b2a11d4b559a/KM0002460-_3_-1220.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times-epilogue.jpg"
   },
   {
     "album": "Modern Times – Epilogue",
@@ -190,344 +168,301 @@ const musicasIU = [
     "file": "songs/Daydream (feat. Yang Hee-eun) (한낮의 꿈 (feat.양희은)).mp3",
     "title": "Daydream (feat. Yang Hee-eun) (한낮의 꿈 (feat.양희은))",
     "year": "2013",
-    "cover": "covers/modern-times-epilogue.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/7e/c4/63/7ec46341-e1c2-0e22-00a9-b2a11d4b559a/KM0002460-_3_-1220.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times-epilogue.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Dear Name (이름에게).mp3",
     "title": "Dear Name (이름에게)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/dlwlrma (이 지금).mp3",
     "title": "dlwlrma (이 지금)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "Spring of Twenty",
     "file": "songs/Don’t Like Her (그 애 참 싫다).mp3",
     "title": "Don’t Like Her (그 애 참 싫다)",
     "year": "2012",
-    "cover": "covers/spring-of-twenty.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/2a/cf/15/2acf150c-80d1-9c49-94b4-866c33480e84/KM0001502-_-_0511.jpg/600x600bb.jpg"
+    "cover": "covers/spring-of-twenty.jpg"
   },
   {
     "album": "Pieces - EP",
     "file": "songs/Drama (드라마).mp3",
     "title": "Drama (드라마)",
     "year": "2021",
-    "cover": "covers/pieces-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b6/d7/03/b6d70395-380c-42b1-6cab-04d51c1c4d9d/cover_KM0014526_1.jpg/600x600bb.jpg"
+    "cover": "covers/pieces-ep.jpg"
   },
   {
     "album": "A Flower Bookmark",
     "file": "songs/Dreams in summer night (여름밤의 꿈).mp3",
     "title": "Dreams in summer night (여름밤의 꿈)",
     "year": "2014",
-    "cover": "covers/a-flower-bookmark.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark.jpg"
   },
   {
     "album": "eight - Single",
     "file": "songs/eight(Prod.&Feat. SUGA of BTS).mp3",
     "title": "eight(Prod.&Feat. SUGA of BTS)",
     "year": "2020",
-    "cover": "covers/eight-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6b/65/4d/6b654d71-ed85-c6c4-8fe2-ef3d8e9f2ee0/cover_-.jpg/600x600bb.jpg"
+    "cover": "covers/eight-single.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/Empty Cup (빈 컵 (Empty Cup)).mp3",
     "title": "Empty Cup (빈 컵 (Empty Cup))",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Ending Scene (이런 엔딩).mp3",
     "title": "Ending Scene (이런 엔딩)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/Epilogue (에필로그).mp3",
     "title": "Epilogue (에필로그)",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "Spring of Twenty",
     "file": "songs/Every End of the Day (하루 끝).mp3",
     "title": "Every End of the Day (하루 끝)",
     "year": "2012",
-    "cover": "covers/spring-of-twenty.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/2a/cf/15/2acf150c-80d1-9c49-94b4-866c33480e84/KM0001502-_-_0511.jpg/600x600bb.jpg"
+    "cover": "covers/spring-of-twenty.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Every Sweet Day (Every Sweet Day).mp3",
     "title": "Every Sweet Day (Every Sweet Day)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Modern Times – Epilogue",
     "file": "songs/Everybody has secrets (feat. GAIN) (누구나 비밀은 있다 (feat.가인 of Brown Eyed Girls)).mp3",
     "title": "Everybody has secrets (feat. GAIN) (누구나 비밀은 있다 (feat.가인 of Brown Eyed Girls))",
     "year": "2013",
-    "cover": "covers/modern-times-epilogue.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/7e/c4/63/7ec46341-e1c2-0e22-00a9-b2a11d4b559a/KM0002460-_3_-1220.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times-epilogue.jpg"
   },
   {
     "album": "A Flower Bookmark 2",
     "file": "songs/Everyday with you (매일 그대와).mp3",
     "title": "Everyday with you (매일 그대와)",
     "year": "2017",
-    "cover": "covers/a-flower-bookmark-2.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/12/bc/b712bc53-60c9-9f1b-0c2d-48bb294e0cbf/cover-.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-2.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Everything's Alright (feat. Kim Hyun-Cheol) (Everything's Allright (feat. 김현철)).mp3",
     "title": "Everything's Alright (feat. Kim Hyun-Cheol) (Everything's Allright (feat. 김현철))",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Face To Face (After Looking At) (마주보기 (바라보기 그 후)).mp3",
     "title": "Face To Face (After Looking At) (마주보기 (바라보기 그 후))",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Can You Hear Me? - EP",
     "file": "songs/Fairytale.mp3",
     "title": "Fairytale",
     "year": "2013",
-    "cover": "covers/can-you-hear-me-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/0f/65/e5/0f65e5ff-3b73-cd42-70e3-9dec9cbfdafb/05099995889559.jpg/600x600bb.jpg"
+    "cover": "covers/can-you-hear-me-ep.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Feel So Good (Feel So Good).mp3",
     "title": "Feel So Good (Feel So Good)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "First Love - Single",
     "file": "songs/first love (첫사랑이죠).mp3",
     "title": "first love (첫사랑이죠)",
     "year": "2010",
-    "cover": "covers/first-love-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/3e/f7/85/mzi.qrpfabxe.jpg/600x600bb.jpg"
+    "cover": "covers/first-love-single.jpg"
   },
   {
     "album": "A Flower Bookmark",
     "file": "songs/Flower (꽃).mp3",
     "title": "Flower (꽃)",
     "year": "2014",
-    "cover": "covers/a-flower-bookmark.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/Flu (Flu).mp3",
     "title": "Flu (Flu)",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "Monday Afternoon - EP",
     "file": "songs/Follow The Moon.mp3",
     "title": "Follow The Moon",
     "year": "2013",
-    "cover": "covers/monday-afternoon-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b8/58/1c/b8581c0f-848c-8f23-aae3-76c62432d14c/05099940949659.jpg/600x600bb.jpg"
+    "cover": "covers/monday-afternoon-ep.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Four Without Me (나 말고 넷).mp3",
     "title": "Four Without Me (나 말고 넷)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Modern Times – Epilogue",
     "file": "songs/Friday (feat.Jang Yi-jeong) (금요일에 만나요 (feat.장이정 of HISTORY)).mp3",
     "title": "Friday (feat.Jang Yi-jeong) (금요일에 만나요 (feat.장이정 of HISTORY))",
     "year": "2013",
-    "cover": "covers/modern-times-epilogue.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/7e/c4/63/7ec46341-e1c2-0e22-00a9-b2a11d4b559a/KM0002460-_3_-1220.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times-epilogue.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Full Stop (마침표).mp3",
     "title": "Full Stop (마침표)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "CHAT-SHIRE",
     "file": "songs/Glasses (안경).mp3",
     "title": "Glasses (안경)",
     "year": "2015",
-    "cover": "covers/chat-shire.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/75/d2/f875d2e2-1317-7f5a-2025-7ca9513dbb3d/COVER-.jpg/600x600bb.jpg"
+    "cover": "covers/chat-shire.jpg"
   },
   {
     "album": "Good Day (Japanese Version) - EP",
     "file": "songs/Good Day (Japanese Version).mp3",
     "title": "Good Day (Japanese Version)",
     "year": "2012",
-    "cover": "covers/good-day-japanese-version-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/21/41/a4/2141a47e-73ec-83f0-50f4-fe15bf842e0b/05099946315359.jpg/600x600bb.jpg"
+    "cover": "covers/good-day-japanese-version-ep.jpg"
   },
   {
     "album": "Real",
     "file": "songs/Good day (좋은 날).mp3",
     "title": "Good day (좋은 날)",
     "year": "2010",
-    "cover": "covers/real.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6d/2e/c9/6d2ec954-d8d8-b26a-1a8f-def6026815c5/mzi.orccormf.jpg/600x600bb.jpg"
+    "cover": "covers/real.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Graduation Day (졸업하는 날).mp3",
     "title": "Graduation Day (졸업하는 날)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Modern Times",
     "file": "songs/Havana (Havana).mp3",
     "title": "Havana (Havana)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Heart - Single",
     "file": "songs/heart (마음).mp3",
     "title": "heart (마음)",
     "year": "2015",
-    "cover": "covers/heart-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/ac/64/a2/ac64a2b1-3c5b-43e9-809e-ba25bf70a954/COVER-_DS.jpg/600x600bb.jpg"
+    "cover": "covers/heart-single.jpg"
   },
   {
     "album": "IU...IM",
     "file": "songs/heart beating date (두근 두근 데이트).mp3",
     "title": "heart beating date (두근 두근 데이트)",
     "year": "2009",
-    "cover": "covers/iu-im.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/e8/f0/8e/mzi.mmjkqcht.jpg/600x600bb.jpg"
+    "cover": "covers/iu-im.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/Hi spring Bye (봄 안녕 봄).mp3",
     "title": "Hi spring Bye (봄 안녕 봄)",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Holding A Star In My Heart (feat. Kim Gwang-Jin) (별을 찾는 아이 (feat. 김광진)).mp3",
     "title": "Holding A Star In My Heart (feat. Kim Gwang-Jin) (별을 찾는 아이 (feat. 김광진))",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "The Winning",
     "file": "songs/Holssi (홀씨).mp3",
     "title": "Holssi (홀씨)",
     "year": "2024",
-    "cover": "covers/the-winning.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/43/d2/3e43d2dc-acd4-5db6-9ae7-99299a044584/cover_KM0019422_1.jpg/600x600bb.jpg"
+    "cover": "covers/the-winning.jpg"
   },
   {
     "album": "The Winning",
     "file": "songs/I stan U (관객이 될게 (I stan U)).mp3",
     "title": "I stan U (관객이 될게 (I stan U))",
     "year": "2024",
-    "cover": "covers/the-winning.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/43/d2/3e43d2dc-acd4-5db6-9ae7-99299a044584/cover_KM0019422_1.jpg/600x600bb.jpg"
+    "cover": "covers/the-winning.jpg"
   },
   {
     "album": "Real",
     "file": "songs/In a room alone (혼자 있는 방).mp3",
     "title": "In a room alone (혼자 있는 방)",
     "year": "2010",
-    "cover": "covers/real.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6d/2e/c9/6d2ec954-d8d8-b26a-1a8f-def6026815c5/mzi.orccormf.jpg/600x600bb.jpg"
+    "cover": "covers/real.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Jam Jam (잼잼).mp3",
     "title": "Jam Jam (잼잼)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "CHAT-SHIRE",
     "file": "songs/Knees (무릎).mp3",
     "title": "Knees (무릎)",
     "year": "2015",
-    "cover": "covers/chat-shire.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/75/d2/f875d2e2-1317-7f5a-2025-7ca9513dbb3d/COVER-.jpg/600x600bb.jpg"
+    "cover": "covers/chat-shire.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/L'amant (라망 (L'amant)).mp3",
     "title": "L'amant (라망 (L'amant))",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Last Fantasy (Last Fantasy).mp3",
     "title": "Last Fantasy (Last Fantasy)",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "A Flower Bookmark 2",
     "file": "songs/Last night story (어젯밤 이야기).mp3",
     "title": "Last night story (어젯밤 이야기)",
     "year": "2017",
-    "cover": "covers/a-flower-bookmark-2.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/12/bc/b712bc53-60c9-9f1b-0c2d-48bb294e0cbf/cover-.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-2.jpg"
   },
   {
     "album": "A Flower Bookmark 3",
     "file": "songs/Last Scene (Feat. Wonstein) (Last Scene (Feat. 원슈타인)).mp3",
     "title": "Last Scene (Feat. Wonstein) (Last Scene (Feat. 원슈타인))",
     "year": "2025",
-    "cover": "covers/a-flower-bookmark-3.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/d4/c1/53d4c1e4-c712-ef2b-e862-f46045fe5500/cover_KM0022858_1.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-3.jpg"
   },
   {
     "album": "LILAC",
@@ -537,208 +472,182 @@ const musicasIU = [
     "file": "songs/LILAC (라일락).mp3",
     "title": "LILAC (라일락)",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Looking at you (바라보기).mp3",
     "title": "Looking at you (바라보기)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Lost and Found",
     "file": "songs/lost child (미아).mp3",
     "title": "lost child (미아)",
     "year": "2008",
-    "cover": "covers/lost-and-found.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/24/b1/16/24b116d4-c17a-f290-94a6-e69b5ad76d86/cover_cover_Cover-.jpg/600x600bb.jpg"
+    "cover": "covers/lost-and-found.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Love Alone (그렇게 사랑은).mp3",
     "title": "Love Alone (그렇게 사랑은)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "IU...IM",
     "file": "songs/Love attack (LOVE ATTACK).mp3",
     "title": "Love attack (LOVE ATTACK)",
     "year": "2009",
-    "cover": "covers/iu-im.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/e8/f0/8e/mzi.mmjkqcht.jpg/600x600bb.jpg"
+    "cover": "covers/iu-im.jpg"
   },
   {
     "album": "Pieces - EP",
     "file": "songs/Love Letter (러브레터).mp3",
     "title": "Love Letter (러브레터)",
     "year": "2021",
-    "cover": "covers/pieces-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b6/d7/03/b6d70395-380c-42b1-6cab-04d51c1c4d9d/cover_KM0014526_1.jpg/600x600bb.jpg"
+    "cover": "covers/pieces-ep.jpg"
   },
   {
     "album": "Modern Times",
     "file": "songs/Love of B (을의 연애).mp3",
     "title": "Love of B (을의 연애)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Love Poem - EP",
     "file": "songs/Love poem (Love poem).mp3",
     "title": "Love poem (Love poem)",
     "year": "2019",
-    "cover": "covers/love-poem-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/b8/18/b8b81899-a984-be85-5656-ec1f2fc10227/5_Love_poem.jpg/600x600bb.jpg"
+    "cover": "covers/love-poem-ep.jpg"
   },
   {
     "album": "The Winning",
     "file": "songs/Love wins all (Love wins all).mp3",
     "title": "Love wins all (Love wins all)",
     "year": "2024",
-    "cover": "covers/the-winning.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/43/d2/3e43d2dc-acd4-5db6-9ae7-99299a044584/cover_KM0019422_1.jpg/600x600bb.jpg"
+    "cover": "covers/the-winning.jpg"
   },
   {
     "album": "Love Poem - EP",
     "file": "songs/Lullaby (자장가).mp3",
     "title": "Lullaby (자장가)",
     "year": "2019",
-    "cover": "covers/love-poem-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/b8/18/b8b81899-a984-be85-5656-ec1f2fc10227/5_Love_poem.jpg/600x600bb.jpg"
+    "cover": "covers/love-poem-ep.jpg"
   },
   {
     "album": "IU...IM",
     "file": "songs/marshmallow (마쉬멜로우).mp3",
     "title": "marshmallow (마쉬멜로우)",
     "year": "2009",
-    "cover": "covers/iu-im.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/e8/f0/8e/mzi.mmjkqcht.jpg/600x600bb.jpg"
+    "cover": "covers/iu-im.jpg"
   },
   {
     "album": "A Flower Bookmark",
     "file": "songs/Meaning of you (너의 의미 (feat. 김창완)).mp3",
     "title": "Meaning of you (너의 의미 (feat. 김창완))",
     "year": "2014",
-    "cover": "covers/a-flower-bookmark.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark.jpg"
   },
   {
     "album": "Real",
     "file": "songs/Merry Christmas ahead (feat.Chundung) (미리 메리 크리스마스 (feat.천둥 of MBLAQ)).mp3",
     "title": "Merry Christmas ahead (feat.Chundung) (미리 메리 크리스마스 (feat.천둥 of MBLAQ))",
     "year": "2010",
-    "cover": "covers/real.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6d/2e/c9/6d2ec954-d8d8-b26a-1a8f-def6026815c5/mzi.orccormf.jpg/600x600bb.jpg"
+    "cover": "covers/real.jpg"
   },
   {
     "album": "When Life Gives You Tangerines OST, Chapter 3",
     "file": "songs/Midnight Walk (밤 산책).mp3",
     "title": "Midnight Walk (밤 산책)",
     "year": "2025",
-    "cover": "covers/when-life-gives-you-tangerines-ost-chapter-3.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c4/f3/03/c4f303c8-26d0-bff7-3147-fa000e7038df/cover_KM0021933_1.jpg/600x600bb.jpg"
+    "cover": "covers/when-life-gives-you-tangerines-ost-chapter-3.jpg"
   },
   {
     "album": "Modern Times",
     "file": "songs/Modern Times (Modern Times).mp3",
     "title": "Modern Times (Modern Times)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Monday Afternoon - EP",
     "file": "songs/Monday Afternoon.mp3",
     "title": "Monday Afternoon",
     "year": "2013",
-    "cover": "covers/monday-afternoon-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b8/58/1c/b8581c0f-848c-8f23-aae3-76c62432d14c/05099940949659.jpg/600x600bb.jpg"
+    "cover": "covers/monday-afternoon-ep.jpg"
   },
   {
     "album": "Mother Nature (H₂O) - Single",
     "file": "songs/Mother Nature (H₂O) (Mother Nature (H₂O)).mp3",
     "title": "Mother Nature (H₂O) (Mother Nature (H₂O))",
     "year": "2022",
-    "cover": "covers/mother-nature-h2o-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/06/bd/73/06bd73b4-d832-df9c-53f9-1e80d9f592a0/cover_KM0014712_1.jpg/600x600bb.jpg"
+    "cover": "covers/mother-nature-h2o-single.jpg"
   },
   {
     "album": "A Flower Bookmark",
     "file": "songs/My old story (나의 옛날이야기).mp3",
     "title": "My old story (나의 옛날이야기)",
     "year": "2014",
-    "cover": "covers/a-flower-bookmark.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/My sea (아이와 나의 바다).mp3",
     "title": "My sea (아이와 나의 바다)",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "A Flower Bookmark 3",
     "file": "songs/Never Ending Story (Never Ending Story).mp3",
     "title": "Never Ending Story (Never Ending Story)",
     "year": "2025",
-    "cover": "covers/a-flower-bookmark-3.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/d4/c1/53d4c1e4-c712-ef2b-e862-f46045fe5500/cover_KM0022858_1.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-3.jpg"
   },
   {
     "album": "Can You Hear Me? - EP",
     "file": "songs/New World.mp3",
     "title": "New World",
     "year": "2013",
-    "cover": "covers/can-you-hear-me-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/0f/65/e5/0f65e5ff-3b73-cd42-70e3-9dec9cbfdafb/05099995889559.jpg/600x600bb.jpg"
+    "cover": "covers/can-you-hear-me-ep.jpg"
   },
   {
     "album": "Pieces - EP",
     "file": "songs/Next Stop (정거장).mp3",
     "title": "Next Stop (정거장)",
     "year": "2021",
-    "cover": "covers/pieces-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b6/d7/03/b6d70395-380c-42b1-6cab-04d51c1c4d9d/cover_KM0014526_1.jpg/600x600bb.jpg"
+    "cover": "covers/pieces-ep.jpg"
   },
   {
     "album": "Nitpicking - Single",
     "file": "songs/Nitpicking (잔소리 (with 2AM 슬옹)).mp3",
     "title": "Nitpicking (잔소리 (with 2AM 슬옹))",
     "year": "2010",
-    "cover": "covers/nitpicking-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/a9/f6/d7/mzi.gzrtzxox.jpg/600x600bb.jpg"
+    "cover": "covers/nitpicking-single.jpg"
   },
   {
     "album": "Real",
     "file": "songs/Not like this (이게 아닌데).mp3",
     "title": "Not like this (이게 아닌데)",
     "year": "2010",
-    "cover": "covers/real.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6d/2e/c9/6d2ec954-d8d8-b26a-1a8f-def6026815c5/mzi.orccormf.jpg/600x600bb.jpg"
+    "cover": "covers/real.jpg"
   },
   {
     "album": "Modern Times",
     "file": "songs/Obliviate (OBLIVIATE).mp3",
     "title": "Obliviate (OBLIVIATE)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "A Flower Bookmark 3",
     "file": "songs/October 4th (10월 4일).mp3",
     "title": "October 4th (10월 4일)",
     "year": "2025",
-    "cover": "covers/a-flower-bookmark-3.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/d4/c1/53d4c1e4-c712-ef2b-e862-f46045fe5500/cover_KM0022858_1.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-3.jpg"
   },
   {
     "album": "Real+",
@@ -748,16 +657,14 @@ const musicasIU = [
     "file": "songs/Only I didn't know (With Pianist.mp3",
     "title": "Only I Didn't Know (with Pianist Kim Gwang-min)",
     "year": "2011",
-    "cover": "covers/real-plus.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/4d/16/9e/4d169e4b-b3d5-5683-d20d-eb19d95083ec/cover_KM0000843_1.jpg/600x600bb.jpg"
+    "cover": "covers/real-plus.jpg"
   },
   {
     "album": "Real+",
     "file": "songs/Only I didn't know (나만 몰랐던 이야기).mp3",
     "title": "Only I didn't know (나만 몰랐던 이야기)",
     "year": "2011",
-    "cover": "covers/real-plus.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/4d/16/9e/4d169e4b-b3d5-5683-d20d-eb19d95083ec/cover_KM0000843_1.jpg/600x600bb.jpg"
+    "cover": "covers/real-plus.jpg"
   },
   {
     "album": "Palette",
@@ -767,96 +674,84 @@ const musicasIU = [
     "file": "songs/Palette (feat. G-DRAGON) (팔레트 (feat. G-DRAGON)).mp3",
     "title": "Palette (feat. G-DRAGON) (팔레트 (feat. G-DRAGON))",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "Spring of Twenty",
     "file": "songs/Peach (복숭아).mp3",
     "title": "Peach (복숭아)",
     "year": "2012",
-    "cover": "covers/spring-of-twenty.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/2a/cf/15/2acf150c-80d1-9c49-94b4-866c33480e84/KM0001502-_-_0511.jpg/600x600bb.jpg"
+    "cover": "covers/spring-of-twenty.jpg"
   },
   {
     "album": "A Flower Bookmark",
     "file": "songs/Pierrot laughs at us (삐에로는 우릴 보고 웃지).mp3",
     "title": "Pierrot laughs at us (삐에로는 우릴 보고 웃지)",
     "year": "2014",
-    "cover": "covers/a-flower-bookmark.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/pitiful (가여워).mp3",
     "title": "pitiful (가여워)",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Good Day (Japanese Version) - EP",
     "file": "songs/Rain Drop (Japanese Version).mp3",
     "title": "Rain Drop (Japanese Version)",
     "year": "2012",
-    "cover": "covers/good-day-japanese-version-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/21/41/a4/2141a47e-73ec-83f0-50f4-fe15bf842e0b/05099946315359.jpg/600x600bb.jpg"
+    "cover": "covers/good-day-japanese-version-ep.jpg"
   },
   {
     "album": "Nitpicking - Single",
     "file": "songs/Rain Drop (Rain Drop).mp3",
     "title": "Rain Drop (Rain Drop)",
     "year": "2010",
-    "cover": "covers/nitpicking-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/a9/f6/d7/mzi.gzrtzxox.jpg/600x600bb.jpg"
+    "cover": "covers/nitpicking-single.jpg"
   },
   {
     "album": "CHAT-SHIRE",
     "file": "songs/Red Queen (feat.Zion.T) (RED QUEEN (FEAT. ZION.T)).mp3",
     "title": "Red Queen (feat.Zion.T) (RED QUEEN (FEAT. ZION.T))",
     "year": "2015",
-    "cover": "covers/chat-shire.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/75/d2/f875d2e2-1317-7f5a-2025-7ca9513dbb3d/COVER-.jpg/600x600bb.jpg"
+    "cover": "covers/chat-shire.jpg"
   },
   {
     "album": "A Flower Bookmark 3",
     "file": "songs/Red Sneakers (빨간 운동화).mp3",
     "title": "Red Sneakers (빨간 운동화)",
     "year": "2025",
-    "cover": "covers/a-flower-bookmark-3.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/d4/c1/53d4c1e4-c712-ef2b-e862-f46045fe5500/cover_KM0022858_1.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-3.jpg"
   },
   {
     "album": "Real+",
     "file": "songs/Scary Fairy Tale (잔혹동화).mp3",
     "title": "Scary Fairy Tale (잔혹동화)",
     "year": "2011",
-    "cover": "covers/real-plus.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/4d/16/9e/4d169e4b-b3d5-5683-d20d-eb19d95083ec/cover_KM0000843_1.jpg/600x600bb.jpg"
+    "cover": "covers/real-plus.jpg"
   },
   {
     "album": "LOEN TREE Summer Story",
     "file": "songs/Sea Of Moonlight (달빛바다).mp3",
     "title": "Sea Of Moonlight (달빛바다)",
     "year": "2012",
-    "cover": "covers/loen-tree-summer-story.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/57/aa/4e/57aa4e0f-9b17-bdd0-4ee9-9f8842a58438/KM0001684_LOEN_TREE_-0802.jpg/600x600bb.jpg"
+    "cover": "covers/loen-tree-summer-story.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Secret (비밀).mp3",
     "title": "Secret (비밀)",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "A Flower Bookmark 2",
     "file": "songs/Secret Garden (비밀의 화원).mp3",
     "title": "Secret Garden (비밀의 화원)",
     "year": "2017",
-    "cover": "covers/a-flower-bookmark-2.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/12/bc/b712bc53-60c9-9f1b-0c2d-48bb294e0cbf/cover-.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-2.jpg"
   },
   {
     "album": "The Winning",
@@ -866,80 +761,70 @@ const musicasIU = [
     "file": "songs/Shh.. (Feat. HYEIN, WONSUN JOE & Special Narr. Patti Kim) (Shh.. (Feat. 혜인(HYEIN), 조원선....mp3",
     "title": "Shh.. (feat. HYEIN, WONSUN JOE & Special Narr. Patti Kim)",
     "year": "2024",
-    "cover": "covers/the-winning.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/43/d2/3e43d2dc-acd4-5db6-9ae7-99299a044584/cover_KM0019422_1.jpg/600x600bb.jpg"
+    "cover": "covers/the-winning.jpg"
   },
   {
     "album": "CHAT-SHIRE",
     "file": "songs/Shoes (새 신발).mp3",
     "title": "Shoes (새 신발)",
     "year": "2015",
-    "cover": "covers/chat-shire.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/75/d2/f875d2e2-1317-7f5a-2025-7ca9513dbb3d/COVER-.jpg/600x600bb.jpg"
+    "cover": "covers/chat-shire.jpg"
   },
   {
     "album": "The Winning",
     "file": "songs/Shopper (Shopper).mp3",
     "title": "Shopper (Shopper)",
     "year": "2024",
-    "cover": "covers/the-winning.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/43/d2/3e43d2dc-acd4-5db6-9ae7-99299a044584/cover_KM0019422_1.jpg/600x600bb.jpg"
+    "cover": "covers/the-winning.jpg"
   },
   {
     "album": "You & I (Japanese Version) - Single",
     "file": "songs/Shounen Jidai.mp3",
     "title": "Shounen Jidai",
     "year": "2012",
-    "cover": "covers/you-i-japanese-version-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1f/d2/93/1fd2936b-6a60-5aee-19be-bedf18eaba80/05099997247050.jpg/600x600bb.jpg"
+    "cover": "covers/you-i-japanese-version-single.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Sleeping Prince (feat. Yoon Sang) (잠자는 숲속의 왕자 (feat. 윤상)).mp3",
     "title": "Sleeping Prince (feat. Yoon Sang) (잠자는 숲속의 왕자 (feat. 윤상))",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "A Flower Bookmark 2",
     "file": "songs/Sleepless rainy night (잠 못 드는 밤 비는 내리고).mp3",
     "title": "Sleepless rainy night (잠 못 드는 밤 비는 내리고)",
     "year": "2017",
-    "cover": "covers/a-flower-bookmark-2.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/12/bc/b712bc53-60c9-9f1b-0c2d-48bb294e0cbf/cover-.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-2.jpg"
   },
   {
     "album": "Sogyeokdong - Single",
     "file": "songs/Sogyeokdong.mp3",
     "title": "Sogyeokdong",
     "year": "2014",
-    "cover": "covers/sogyeokdong-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/d1/60/3d/d1603d8d-a789-25fd-13ff-d2c89120d020/KM0002959-_DS-1002.jpg/600x600bb.jpg"
+    "cover": "covers/sogyeokdong-single.jpg"
   },
   {
     "album": "Dream High OST",
     "file": "songs/Someday.mp3",
     "title": "Someday",
     "year": "2011",
-    "cover": "covers/dream-high-ost.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/43/3a/aa/mzi.nyvytbph.jpg/600x600bb.jpg"
+    "cover": "covers/dream-high-ost.jpg"
   },
   {
     "album": "A Flower Bookmark 3",
     "file": "songs/Square's dream (네모의 꿈).mp3",
     "title": "Square's dream (네모의 꿈)",
     "year": "2025",
-    "cover": "covers/a-flower-bookmark-3.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/d4/c1/53d4c1e4-c712-ef2b-e862-f46045fe5500/cover_KM0022858_1.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark-3.jpg"
   },
   {
     "album": "strawberry moon - Single",
     "file": "songs/strawberry moon (strawberry moon).mp3",
     "title": "strawberry moon (strawberry moon)",
     "year": "2021",
-    "cover": "covers/strawberry-moon-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/61/ac/6c/61ac6cf8-f016-5fbb-79b0-8cfa51da855b/cover.jpg/600x600bb.jpg"
+    "cover": "covers/strawberry-moon-single.jpg"
   },
   {
     "album": "IU...IM",
@@ -949,48 +834,42 @@ const musicasIU = [
     "file": "songs/Taking a traing.mp3",
     "title": "Taking a Train",
     "year": "2009",
-    "cover": "covers/iu-im.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/e8/f0/8e/mzi.mmjkqcht.jpg/600x600bb.jpg"
+    "cover": "covers/iu-im.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Teacher (feat. Ra.D) (Teacher (feat. Ra.D)).mp3",
     "title": "Teacher (feat. Ra.D) (Teacher (feat. Ra.D))",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "IU...IM",
     "file": "songs/Tear drops in the morning.mp3",
     "title": "Tear drops in the morning",
     "year": "2009",
-    "cover": "covers/iu-im.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/e8/f0/8e/mzi.mmjkqcht.jpg/600x600bb.jpg"
+    "cover": "covers/iu-im.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/The Abandoned (길잃은 강아지).mp3",
     "title": "The Abandoned (길잃은 강아지)",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "Can You Hear Me? - EP",
     "file": "songs/The Age Of The Cathedrals.mp3",
     "title": "The Age Of The Cathedrals",
     "year": "2013",
-    "cover": "covers/can-you-hear-me-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/0f/65/e5/0f65e5ff-3b73-cd42-70e3-9dec9cbfdafb/05099995889559.jpg/600x600bb.jpg"
+    "cover": "covers/can-you-hear-me-ep.jpg"
   },
   {
     "album": "Real",
     "file": "songs/The night of the first breakup (첫 이별 그날 밤).mp3",
     "title": "The night of the first breakup (첫 이별 그날 밤)",
     "year": "2010",
-    "cover": "covers/real.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6d/2e/c9/6d2ec954-d8d8-b26a-1a8f-def6026815c5/mzi.orccormf.jpg/600x600bb.jpg"
+    "cover": "covers/real.jpg"
   },
   {
     "album": "Modern Times",
@@ -1000,56 +879,49 @@ const musicasIU = [
     "file": "songs/The Red Shoes (분홍신).mp3",
     "title": "The Red Shoes (분홍신)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "CHAT-SHIRE",
     "file": "songs/The shower (푸르던).mp3",
     "title": "The shower (푸르던)",
     "year": "2015",
-    "cover": "covers/chat-shire.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/75/d2/f875d2e2-1317-7f5a-2025-7ca9513dbb3d/COVER-.jpg/600x600bb.jpg"
+    "cover": "covers/chat-shire.jpg"
   },
   {
     "album": "Love Poem - EP",
     "file": "songs/The visitor (그 사람).mp3",
     "title": "The visitor (그 사람)",
     "year": "2019",
-    "cover": "covers/love-poem-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/b8/18/b8b81899-a984-be85-5656-ec1f2fc10227/5_Love_poem.jpg/600x600bb.jpg"
+    "cover": "covers/love-poem-ep.jpg"
   },
   {
     "album": "Palette",
     "file": "songs/Through the Night (밤편지).mp3",
     "title": "Through the Night (밤편지)",
     "year": "2017",
-    "cover": "covers/palette.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/94/ec/24/94ec2442-5add-d1ca-5eba-37f1298abfbc/cover_KM0005225_1.jpg/600x600bb.jpg"
+    "cover": "covers/palette.jpg"
   },
   {
     "album": "LILAC",
     "file": "songs/Troll (Feat. DEAN) (돌림노래 (Feat. DEAN)).mp3",
     "title": "Troll (Feat. DEAN) (돌림노래 (Feat. DEAN))",
     "year": "2021",
-    "cover": "covers/lilac.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg"
+    "cover": "covers/lilac.jpg"
   },
   {
     "album": "Can You Hear Me? - EP",
     "file": "songs/Truth.mp3",
     "title": "Truth",
     "year": "2013",
-    "cover": "covers/can-you-hear-me-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/0f/65/e5/0f65e5ff-3b73-cd42-70e3-9dec9cbfdafb/05099995889559.jpg/600x600bb.jpg"
+    "cover": "covers/can-you-hear-me-ep.jpg"
   },
   {
     "album": "CHAT-SHIRE",
     "file": "songs/Twenty-three (스물셋).mp3",
     "title": "Twenty-three (스물셋)",
     "year": "2015",
-    "cover": "covers/chat-shire.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/75/d2/f875d2e2-1317-7f5a-2025-7ca9513dbb3d/COVER-.jpg/600x600bb.jpg"
+    "cover": "covers/chat-shire.jpg"
   },
   {
     "album": "Lost and Found",
@@ -1059,24 +931,21 @@ const musicasIU = [
     "file": "songs/ugly duckling (미운 오리).mp3",
     "title": "ugly duckling (미운 오리)",
     "year": "2008",
-    "cover": "covers/lost-and-found.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/24/b1/16/24b116d4-c17a-f290-94a6-e69b5ad76d86/cover_cover_Cover-.jpg/600x600bb.jpg"
+    "cover": "covers/lost-and-found.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Uncle (feat. Lee Juck) (삼촌 (feat. 이적)).mp3",
     "title": "Uncle (feat. Lee Juck) (삼촌 (feat. 이적))",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "Love Poem - EP",
     "file": "songs/unlucky (unlucky).mp3",
     "title": "unlucky (unlucky)",
     "year": "2019",
-    "cover": "covers/love-poem-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/b8/18/b8b81899-a984-be85-5656-ec1f2fc10227/5_Love_poem.jpg/600x600bb.jpg"
+    "cover": "covers/love-poem-ep.jpg"
   },
   {
     "album": "Modern Times",
@@ -1086,8 +955,7 @@ const musicasIU = [
     "file": "songs/voice-mail-korean.mp3",
     "title": "Voice-Mail (Korean Version)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Can You Hear Me? - EP",
@@ -1097,16 +965,14 @@ const musicasIU = [
     "file": "songs/Voice-Mail.mp3",
     "title": "Voice-Mail (Japanese Version)",
     "year": "2013",
-    "cover": "covers/can-you-hear-me-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/0f/65/e5/0f65e5ff-3b73-cd42-70e3-9dec9cbfdafb/05099995889559.jpg/600x600bb.jpg"
+    "cover": "covers/can-you-hear-me-ep.jpg"
   },
   {
     "album": "Modern Times",
     "file": "songs/Wait (기다려).mp3",
     "title": "Wait (기다려)",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Modern Times",
@@ -1116,16 +982,14 @@ const musicasIU = [
     "file": "songs/Walk with me, girl (feat. Choi Baek-ho) (아이야 나랑 걷자 (feat.최백호)).mp3",
     "title": "Walk with me, girl (feat. Choi Baek-ho) (아이야 나랑 걷자 (feat.최백호))",
     "year": "2013",
-    "cover": "covers/modern-times.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b6/84/fd/b684fdae-92d3-782b-fa89-eb3b9986c2a5/KM0002335-_3_-1008.jpg/600x600bb.jpg"
+    "cover": "covers/modern-times.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Wallpaper Pattern (벽지무늬).mp3",
     "title": "Wallpaper Pattern (벽지무늬)",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "Growing Up",
@@ -1135,80 +999,86 @@ const musicasIU = [
     "file": "songs/Well… (feat. Mario) (있잖아 (feat. 마리오)).mp3",
     "title": "Well… (feat. Mario) (있잖아 (feat. 마리오))",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Growing Up",
     "file": "songs/Well… (있잖아 (ROCK VER.)).mp3",
     "title": "Well… (있잖아 (ROCK VER.))",
     "year": "2009",
-    "cover": "covers/growing-up.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3b/16/25/3b162583-e45c-ac9e-15db-44332860a2d9/mzi.mgxmjkaw.jpg/600x600bb.jpg"
+    "cover": "covers/growing-up.jpg"
   },
   {
     "album": "Real",
     "file": "songs/What I'm doing slow (느리게 하는 일).mp3",
     "title": "What I'm doing slow (느리게 하는 일)",
     "year": "2010",
-    "cover": "covers/real.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6d/2e/c9/6d2ec954-d8d8-b26a-1a8f-def6026815c5/mzi.orccormf.jpg/600x600bb.jpg"
+    "cover": "covers/real.jpg"
   },
   {
     "album": "A Flower Bookmark",
     "file": "songs/When love passes by (사랑이 지나가면).mp3",
     "title": "When love passes by (사랑이 지나가면)",
     "year": "2014",
-    "cover": "covers/a-flower-bookmark.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg"
+    "cover": "covers/a-flower-bookmark.jpg"
   },
   {
     "album": "Pieces - EP",
     "file": "songs/Winter Sleep (겨울잠).mp3",
     "title": "Winter Sleep (겨울잠)",
     "year": "2021",
-    "cover": "covers/pieces-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b6/d7/03/b6d70395-380c-42b1-6cab-04d51c1c4d9d/cover_KM0014526_1.jpg/600x600bb.jpg"
+    "cover": "covers/pieces-ep.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/Wisdom Tooth (사랑니).mp3",
     "title": "Wisdom Tooth (사랑니)",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "You & I (Japanese Version) - Single",
     "file": "songs/You & I (Japanese Version).mp3",
     "title": "You & I (Japanese Version)",
     "year": "2012",
-    "cover": "covers/you-i-japanese-version-single.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1f/d2/93/1fd2936b-6a60-5aee-19be-bedf18eaba80/05099997247050.jpg/600x600bb.jpg"
+    "cover": "covers/you-i-japanese-version-single.jpg"
   },
   {
     "album": "Last Fantasy",
     "file": "songs/YOU & I (너랑 나).mp3",
     "title": "YOU & I (너랑 나)",
     "year": "2011",
-    "cover": "covers/last-fantasy.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/42/2c/mzi.mezumbpd.jpg/600x600bb.jpg"
+    "cover": "covers/last-fantasy.jpg"
   },
   {
     "album": "Pieces - EP",
     "file": "songs/You (너).mp3",
     "title": "You (너)",
     "year": "2021",
-    "cover": "covers/pieces-ep.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b6/d7/03/b6d70395-380c-42b1-6cab-04d51c1c4d9d/cover_KM0014526_1.jpg/600x600bb.jpg"
+    "cover": "covers/pieces-ep.jpg"
   },
   {
     "album": "CHAT-SHIRE",
     "file": "songs/Zezé (ZEZE).mp3",
     "title": "Zezé (ZEZE)",
     "year": "2015",
-    "cover": "covers/chat-shire.jpg",
-    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/75/d2/f875d2e2-1317-7f5a-2025-7ca9513dbb3d/COVER-.jpg/600x600bb.jpg"
+    "cover": "covers/chat-shire.jpg"
+  },
+  {
+    "title": "Unknown Planet",
+    "file": "songs/Unknown Planet.mp3",
+    "album": "Unknown Planet - Single",
+    "youtube": "https://www.youtube.com/watch?v=KHqDMwHpdy8",
+    "year": "2026",
+    "cover": "covers/unknown-planet-single.jpg"
+  },
+  {
+    "title": "Dear my crazy soulmate",
+    "file": "songs/Dear my crazy soulmate.mp3",
+    "album": "Unknown Planet - Single",
+    "youtube": "https://www.youtube.com/watch?v=IHIt9S2DWcQ",
+    "year": "2026",
+    "cover": "covers/unknown-planet-single.jpg"
   }
 ];
 const IU_DUPLICATE_FILES = {
@@ -1526,7 +1396,9 @@ const IU_DAILY_POOLS = [
       "songs/You & I (Japanese Version).mp3",
       "songs/YOU & I (너랑 나).mp3",
       "songs/You (너).mp3",
-      "songs/Zezé (ZEZE).mp3"
+      "songs/Zezé (ZEZE).mp3",
+      "songs/Unknown Planet.mp3",
+      "songs/Dear my crazy soulmate.mp3"
     ],
     "from": "2026-09-15"
   }

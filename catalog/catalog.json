@@ -1,5 +1,12 @@
 {
   "albums": {
+    "Unknown Planet - Single": {
+      "cover": "covers/unknown-planet-single.jpg",
+      "remoteCover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0f/42/d4/0f42d4ec-e05e-afa2-225a-fa27bb65127b/cover_KM0025182_1.jpg/600x600bb.jpg",
+      "source": "https://music.apple.com/us/album/unknown-planet-single/6808583617",
+      "title": "Unknown Planet - Single",
+      "year": "2026"
+    },
     "A Flower Bookmark": {
       "cover": "covers/a-flower-bookmark.jpg",
       "remoteCover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/1a/7b/301a7b9e-edf2-2db1-e4c5-64044774389a/KM0002740-_-0516.jpg/600x600bb.jpg",
@@ -216,13 +223,6 @@
       "source": "https://music.apple.com/us/artist/iu/409076743",
       "title": "The Winning",
       "year": "2024"
-    },
-    "Unknown Planet - Single": {
-      "cover": "covers/unknown-planet-single.jpg",
-      "remoteCover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0f/42/d4/0f42d4ec-e05e-afa2-225a-fa27bb65127b/cover_KM0025182_1.jpg/600x600bb.jpg",
-      "source": "https://music.apple.com/us/album/unknown-planet-single/6808583617",
-      "title": "Unknown Planet - Single",
-      "year": "2026"
     },
     "When Life Gives You Tangerines OST, Chapter 3": {
       "cover": "covers/when-life-gives-you-tangerines-ost-chapter-3.jpg",
@@ -559,7 +559,9 @@
         "songs/You & I (Japanese Version).mp3",
         "songs/YOU & I (너랑 나).mp3",
         "songs/You (너).mp3",
-        "songs/Zezé (ZEZE).mp3"
+        "songs/Zezé (ZEZE).mp3",
+        "songs/Unknown Planet.mp3",
+        "songs/Dear my crazy soulmate.mp3"
       ],
       "from": "2026-09-15"
     }
@@ -1346,6 +1348,18 @@
       "album": "CHAT-SHIRE",
       "file": "songs/Zezé (ZEZE).mp3",
       "title": "Zezé (ZEZE)"
+    },
+    {
+      "title": "Unknown Planet",
+      "file": "songs/Unknown Planet.mp3",
+      "album": "Unknown Planet - Single",
+      "youtube": "https://www.youtube.com/watch?v=KHqDMwHpdy8"
+    },
+    {
+      "title": "Dear my crazy soulmate",
+      "file": "songs/Dear my crazy soulmate.mp3",
+      "album": "Unknown Planet - Single",
+      "youtube": "https://www.youtube.com/watch?v=IHIt9S2DWcQ"
     }
   ]
 }
