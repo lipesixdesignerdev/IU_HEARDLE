@@ -89,6 +89,7 @@ const escapeHTML = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;', 
 
 // ─── UTILITIES & HELPERS ───
 function getYouTubeLink(song) {
+  if (song?.youtube) return {url: song.youtube, isMV: false};
   if (song && OFFICIAL_MVS[song.title]) {
     return { url: OFFICIAL_MVS[song.title], isMV: true };
   }
@@ -110,7 +111,10 @@ function getDailySongIndex(dateStr) {
     hash = (hash << 5) - hash + dateStr.charCodeAt(i);
     hash |= 0;
   }
-  return Math.abs(hash) % musicasIU.length;
+  // Frozen pools preserve old challenge answers when songs are added or deduplicated.
+  const pool = [...IU_DAILY_POOLS].reverse().find(p => p.from <= dateStr) || IU_DAILY_POOLS[0];
+  const file = pool.files[Math.abs(hash) % pool.files.length];
+  return musicasIU.findIndex(song => song.file === (IU_DUPLICATE_FILES[file] || file));
 }
 
 // ─── UI BUILDERS ───
@@ -293,44 +297,23 @@ async function loadAudioBlob(src) {
 }
 
 // ─── ARTWORK PREFETCH ───
-async function fetchArtwork(song) {
-  if (!song) return null;
-  if (song.cover) return song.cover;
-  const cleanTitle = song.title.replace(/\([^)]+\)/g, '').trim();
-  const queries = [
-    `artist:"IU" track:"${cleanTitle}"`,
-    `artist:"IU" track:"${song.title}"`,
-    `artist:"IU" album:"${song.album}"`,
-  ];
-  const fetchDeezerJSONP = (q) => new Promise((resolve) => {
-    const cb = 'dz_' + Math.floor(Math.random()*1000000);
-    const finish = data => { clearTimeout(timeout); delete window[cb]; s.remove(); resolve(data); };
-    const timeout = setTimeout(() => finish({data:[]}), 4000);
-    window[cb] = finish;
-    const s = document.createElement('script');
-    s.src = `https://api.deezer.com/search?q=${encodeURIComponent(q)}&limit=3&output=jsonp&callback=${cb}`;
-    s.onerror = () => finish({data:[]});
-    document.head.appendChild(s);
-  });
+function artworkCandidates(song) {
+  if (!song) return [];
+  return [...new Set([song.cover, song.coverFallback].filter(url =>
+    typeof url === 'string' &&
+    (/^covers\/[a-z0-9-]+\.jpg$/.test(url) ||
+      /^https:\/\/is[1-5]-ssl\.mzstatic\.com\/image\/thumb\/.+\/(?:[0-9]+x[0-9]+)bb\.jpg$/.test(url))
+  ))];
+}
 
-  for (const q of queries) {
-    try {
-      const data = await fetchDeezerJSONP(q);
-      if (data && data.data && data.data.length > 0) {
-        const cover = data.data[0].album?.cover_xl || data.data[0].album?.cover_big || data.data[0].album?.cover_medium;
-        if (cover) return cover;
-      }
-    } catch(e) { }
-  }
-  try {
-    const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent('IU ' + cleanTitle)}&entity=song&country=kr&limit=5`, { signal: AbortSignal.timeout(4000) });
-    const data = await res.json();
-    if (data.results && data.results.length > 0) {
-      const match = data.results.find(r => r.artistName && r.artistName.includes('IU')) || data.results[0];
-      if (match && match.artworkUrl100) return match.artworkUrl100.replace('100x100bb', '600x600bb');
-    }
-  } catch(e) {}
-  return null;
+async function fetchArtwork(song) {
+  return artworkCandidates(song)[0] || null;
+}
+
+function findSongByTitle(title) {
+  const key = String(title || '').trim().normalize('NFC').toLowerCase();
+  return musicasIU.find(song => [song.title, ...(song.aliases || [])]
+    .some(candidate => candidate.normalize('NFC').toLowerCase() === key));
 }
 
 // ─── GAME CORE ───
@@ -355,6 +338,9 @@ function init() {
     if (savedDaily) {
       try {
         const parsed = JSON.parse(savedDaily);
+        const savedFile = IU_DUPLICATE_FILES[parsed.songFile] || parsed.songFile;
+        const savedSong = musicasIU.find(song => song.file === savedFile);
+        if (savedSong) STATE.song = savedSong;
         STATE.attempt = parsed.attempt || 0;
         STATE.guesses = parsed.guesses || [];
         STATE.over = parsed.over || false;
@@ -460,7 +446,7 @@ STATE.audio.onerror = () => { pauseAudio(); DOM.get('statusText').textContent = 
 function nextTurn(guessVal, skipped = false) {
   if (STATE.over) return;
   if (!skipped) {
-    const song = musicasIU.find(s => s.title.toLowerCase() === guessVal.trim().toLowerCase());
+    const song = findSongByTitle(guessVal);
     if (!song) {
       DOM.get('statusText').textContent = i18n('invalidGuess');
       return;
@@ -470,7 +456,7 @@ function nextTurn(guessVal, skipped = false) {
   pauseAudio();
   DOM.get('statusText').textContent = i18n('status');
   DOM.get('autocomplete').classList.remove('show');
-  const correct = !skipped && guessVal.toLowerCase() === STATE.song.title.toLowerCase();
+  const correct = !skipped && findSongByTitle(guessVal)?.file === STATE.song.file;
   STATE.guesses.push({ title: skipped ? '' : guessVal, correct, skipped });
   
   if (correct || !skipped) DOM.get('songInput').value = '';
@@ -487,6 +473,7 @@ function nextTurn(guessVal, skipped = false) {
   if (STATE.mode === 'daily') {
     const dateStr = STATE.dailyDate || getDailyDateString();
     localStorage.setItem(`iu-heardle-daily-${dateStr}`, JSON.stringify({
+      songFile: STATE.song.file,
       attempt: STATE.attempt,
       guesses: STATE.guesses,
       over: correct || STATE.attempt >= 6
@@ -565,7 +552,23 @@ async function finishGame(won, restored = false) {
   albumArt.removeAttribute('src');
   albumArt.style.display = 'none';
   albumFallback.style.display = 'flex';
-  albumArt.onerror = () => { albumArt.style.display = 'none'; albumFallback.style.display = 'flex'; };
+  const candidates = artworkCandidates(STATE.song);
+  let coverIndex = 0;
+  const ambient = DOM.get('ambientBg');
+  if (ambient) ambient.removeAttribute('src');
+  albumArt.alt = STATE.song.album;
+  albumArt.onerror = () => {
+    if (gameId !== STATE.gameId || !STATE.over) return;
+    const next = candidates[++coverIndex];
+    if (next) {
+      albumArt.src = next;
+      if (ambient) ambient.src = next;
+    } else {
+      albumArt.style.display = 'none';
+      albumFallback.style.display = 'flex';
+      if (ambient) ambient.removeAttribute('src');
+    }
+  };
 
   if (won && !restored && typeof confetti === 'function') confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, colors: ['#00d4ff', '#0070f3', '#ff00ff', '#ffffff'] });
   if (DOM.get('shareBtn')) DOM.get('shareBtn').style.display = 'flex';
@@ -743,7 +746,7 @@ DOM.get('autocomplete').onclick = e => {
 DOM.get('songInput').oninput = e => {
   resetAlphaHighlights();
   const v = e.target.value.trim().toLowerCase();
-  showAC(v ? musicasIU.filter(s => s.title.toLowerCase().includes(v)) : []);
+  showAC(v ? musicasIU.filter(s => [s.title, ...(s.aliases || [])].some(title => title.toLowerCase().includes(v))) : []);
 };
 
 DOM.get('songInput').onkeydown = e => {

@@ -223,3 +223,183 @@ test('late artwork cannot replace the next game artwork', async t => {
   await finished;
   assert.notEqual(el('albumArt').getAttribute('src'), 'https://example.com/old-cover.jpg');
 });
+
+
+test('duplicate titles and corrected historical titles resolve to the same song', async t => {
+  const {game} = await setup(t);
+  for (const song of game.musicasIU.filter(s => s.aliases?.length)) {
+    game.STATE.mode = 'practice';
+    game.init();
+    game.STATE.song = song;
+    game.nextTurn(song.aliases[0]);
+    assert.equal(game.STATE.over, true, song.title);
+    assert.equal(game.STATE.guesses[0].correct, true, song.title);
+    await flush();
+  }
+});
+
+test('cover error retries only the reviewed album then clears artwork and ambient', async t => {
+  const {game, el, requests, w} = await setup(t);
+  const song = game.musicasIU.find(s => s.coverFallback);
+  game.STATE.song = song;
+  game.STATE.artworkPromise = Promise.resolve(song.cover);
+  game.nextTurn(song.title);
+  await flush();
+  assert.equal(el('albumArt').getAttribute('src'), song.cover);
+  el('albumArt').dispatchEvent(new w.Event('error'));
+  assert.equal(el('albumArt').getAttribute('src'), song.coverFallback);
+  el('albumArt').dispatchEvent(new w.Event('error'));
+  assert.equal(el('albumArt').style.display, 'none');
+  assert.equal(el('albumFallback').style.display, 'flex');
+  assert.equal(el('ambientBg').hasAttribute('src'), false);
+  assert.equal(requests.some(r => /itunes|deezer/.test(r.url)), false);
+});
+
+test('saved daily song identity survives catalogue updates', async t => {
+  const {game, w} = await setup(t);
+  const date = game.getDailyDateString();
+  const song = game.musicasIU.find(s => s.file !== game.STATE.song.file);
+  w.localStorage.setItem('iu-heardle-daily-' + date, JSON.stringify({
+    songFile: song.file, attempt: 1, guesses: [{title: '', skipped: true, correct: false}], over: false
+  }));
+  game.init();
+  assert.equal(game.STATE.song.file, song.file);
+  assert.equal(game.STATE.attempt, 1);
+  game.nextTurn('', true);
+  assert.equal(JSON.parse(w.localStorage.getItem('iu-heardle-daily-' + date)).songFile, song.file);
+});
+
+test('archived dates keep their original song after deduplication', async t => {
+  const {game} = await setup(t);
+  for (const [date, file] of [
+  [
+    "2026-08-01",
+    "songs/Love Alone (그렇게 사랑은).mp3"
+  ],
+  [
+    "2026-08-02",
+    "songs/Love attack (LOVE ATTACK).mp3"
+  ],
+  [
+    "2026-08-03",
+    "songs/Love Letter (러브레터).mp3"
+  ],
+  [
+    "2026-08-04",
+    "songs/Love of B (을의 연애).mp3"
+  ],
+  [
+    "2026-08-05",
+    "songs/Love poem (Love poem).mp3"
+  ],
+  [
+    "2026-08-06",
+    "songs/Love wins all (Love wins all).mp3"
+  ],
+  [
+    "2026-08-07",
+    "songs/Lullaby (자장가).mp3"
+  ],
+  [
+    "2026-08-08",
+    "songs/marshmallow (마쉬멜로우).mp3"
+  ],
+  [
+    "2026-08-09",
+    "songs/Meaning of you (너의 의미 (feat. 김창완)).mp3"
+  ],
+  [
+    "2026-08-10",
+    "songs/Rain Drop (Japanese Version).mp3"
+  ],
+  [
+    "2026-08-11",
+    "songs/Rain Drop (Rain Drop).mp3"
+  ],
+  [
+    "2026-08-12",
+    "songs/Red Queen (feat.Zion.T) (RED QUEEN (FEAT. ZION.T)).mp3"
+  ],
+  [
+    "2026-08-13",
+    "songs/Red Sneakers (빨간 운동화).mp3"
+  ],
+  [
+    "2026-08-14",
+    "songs/Scary Fairy Tale (잔혹동화).mp3"
+  ],
+  [
+    "2026-08-15",
+    "songs/Sea Of Moonlight (달빛바다).mp3"
+  ],
+  [
+    "2026-08-16",
+    "songs/Secret (비밀).mp3"
+  ],
+  [
+    "2026-08-17",
+    "songs/Secret Garden (비밀의 화원).mp3"
+  ],
+  [
+    "2026-08-18",
+    "songs/Shh.. (Feat. HYEIN, WONSUN JOE & Special Narr. Patti Kim) (Shh.. (Feat. 혜인(HYEIN), 조원선....mp3"
+  ],
+  [
+    "2026-08-19",
+    "songs/Shoes (새 신발).mp3"
+  ],
+  [
+    "2026-08-20",
+    "songs/Twenty-three (스물셋).mp3"
+  ],
+  [
+    "2026-08-21",
+    "songs/ugly duckling (미운 오리).mp3"
+  ],
+  [
+    "2026-08-22",
+    "songs/ugly duckling (미운 오리).mp3"
+  ],
+  [
+    "2026-08-23",
+    "songs/Uncle (feat. Lee Juck) (삼촌 (feat. 이적)).mp3"
+  ],
+  [
+    "2026-08-24",
+    "songs/unlucky (unlucky).mp3"
+  ],
+  [
+    "2026-08-25",
+    "songs/voice-mail-korean.mp3"
+  ],
+  [
+    "2026-08-26",
+    "songs/Voice-Mail.mp3"
+  ],
+  [
+    "2026-08-27",
+    "songs/Wait (기다려).mp3"
+  ],
+  [
+    "2026-08-28",
+    "songs/Walk with me, girl (feat. Choi Baek-ho) (아이야 나랑 걷자 (feat.최백호)).mp3"
+  ],
+  [
+    "2026-08-29",
+    "songs/Walk with me, girl (feat. Choi Baek-ho) (아이야 나랑 걷자 (feat.최백호)).mp3"
+  ],
+  [
+    "2026-08-30",
+    "songs/BBIBBI (삐삐).mp3"
+  ],
+  [
+    "2026-08-31",
+    "songs/Beautiful Dancer.mp3"
+  ]
+]) {
+    game.STATE.mode = 'daily';
+    game.STATE.dailyDate = date;
+    game.init();
+    assert.equal(game.STATE.song.file, file, date);
+  }
+});

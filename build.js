@@ -1,3 +1,4 @@
+require('./generate-db').validateCatalog(require('./catalog/catalog.json'));
 const fs = require('fs');
 const path = require('path');
 
