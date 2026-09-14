@@ -714,7 +714,7 @@ const musicasIU = [
     "title": "Nitpicking (잔소리 (with 2AM 슬옹))",
     "year": "2010",
     "cover": "covers/nitpicking-single.jpg",
-    "coverFallback": null
+    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/a9/f6/d7/mzi.gzrtzxox.jpg/600x600bb.jpg"
   },
   {
     "album": "Real",
@@ -808,7 +808,7 @@ const musicasIU = [
     "title": "Rain Drop (Rain Drop)",
     "year": "2010",
     "cover": "covers/nitpicking-single.jpg",
-    "coverFallback": null
+    "coverFallback": "https://is1-ssl.mzstatic.com/image/thumb/Music/a9/f6/d7/mzi.gzrtzxox.jpg/600x600bb.jpg"
   },
   {
     "album": "CHAT-SHIRE",

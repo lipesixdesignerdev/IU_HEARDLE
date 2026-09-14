@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Unknown Planet",
+    "status": "pending",
+    "reason": "Command '['/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', '-m', 'yt_dlp', '--skip-download', '--dump-single-json', '--no-playlist', '--socket-timeout', '25', '--retries', '1', 'https://www.youtube.com/watch?v=KHqDMwHpdy8']' returned non-zero exit status 1."
+  },
+  {
+    "title": "Dear my crazy soulmate",
+    "status": "pending",
+    "reason": "Command '['/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', '-m', 'yt_dlp', '--skip-download', '--dump-single-json', '--no-playlist', '--socket-timeout', '25', '--retries', '1', 'https://www.youtube.com/watch?v=IHIt9S2DWcQ']' returned non-zero exit status 1."
+  }
+]
