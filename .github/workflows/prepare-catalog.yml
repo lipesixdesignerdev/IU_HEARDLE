@@ -27,7 +27,7 @@ jobs:
           python-version: '3.12'
       - name: Install asset tools
         run: |
-          python -m pip install yt-dlp
+          python -m pip install "yt-dlp[default]"
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
       - name: Import covers and requested audio

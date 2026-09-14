@@ -68,13 +68,13 @@ def download_audio(song):
     with tempfile.TemporaryDirectory(prefix="iu-import-") as tmp:
         destination = Path(tmp) / "track"
         # The supplied IDs were checked against IU's official channel.
-        info = run([sys.executable, "-m", "yt_dlp", "--skip-download", "--dump-single-json",
+        info = run([sys.executable, "-m", "yt_dlp", "--js-runtimes", "node", "--skip-download", "--dump-single-json",
                     "--no-playlist", "--socket-timeout", "25", "--retries", "1",
                     song["youtube"]], capture_output=True, text=True)
         metadata = json.loads(info.stdout)
         if metadata.get("channel_id") != song["channelId"]:
             raise ValueError("Unexpected YouTube channel: " + song["title"])
-        run([sys.executable, "-m", "yt_dlp", "--no-playlist", "--socket-timeout", "25",
+        run([sys.executable, "-m", "yt_dlp", "--js-runtimes", "node", "--no-playlist", "--socket-timeout", "25",
              "--retries", "1", "--fragment-retries", "1", "-f", "bestaudio",
              "-x", "--audio-format", "mp3", "--audio-quality", "192K",
              "-o", str(destination) + ".%(ext)s", song["youtube"]])
@@ -105,6 +105,9 @@ def main():
     pending = read_json(pending_path)
     remaining, report, added = [], [], []
     for song in pending:
+        if any(existing["file"] == song["file"] for existing in catalog["songs"]):
+            report.append({"title": song["title"], "status": "already-imported"})
+            continue
         try:
             download_audio(song)
             entry = {key: song[key] for key in ("title", "file", "album", "youtube")}
@@ -116,8 +119,12 @@ def main():
             # No placeholder MP3 or unplayable entry is added to the game.
             (ROOT / song["file"]).unlink(missing_ok=True)
             remaining.append(song)
-            report.append({"title": song["title"], "status": "pending", "reason": str(error)[:400]})
-            print("PENDING: " + song["title"] + ": " + str(error)[:400], flush=True)
+            detail = getattr(error, "stderr", None) or str(error)
+            if isinstance(detail, bytes):
+                detail = detail.decode("utf-8", errors="replace")
+            detail = detail.strip()[-1500:]
+            report.append({"title": song["title"], "status": "pending", "reason": detail})
+            print("PENDING: " + song["title"] + ": " + detail, flush=True)
     if added:
         tomorrow = (datetime.datetime.now(datetime.timezone.utc).date() +
                     datetime.timedelta(days=1)).isoformat()
