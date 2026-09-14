@@ -221,3 +221,7 @@ As URLs abaixo são as páginas usadas na conferência; o arquivo JSON também p
 4. Faça commit dos JPEGs, MP3s por Git LFS, catálogo e banco gerado juntos. Nunca acrescente um caminho de áudio sem validar seu arquivo.
 
 Validação inicial: 36 JPEGs baixados; 21 testes passaram; build concluído. Os downloads de áudio continuam condicionados à execução registrada em `catalog/import-status.json`.
+
+Resultado final da importação: os dois áudios foram bloqueados pelo YouTube com “Sign in to confirm you’re not a bot”, inclusive após configurar o runtime JavaScript e as dependências recomendadas do yt-dlp. Nenhum MP3 foi criado para essas faixas e elas não foram ativadas. A capa do single Unknown Planet está salva. Para concluir a inclusão, é necessário obter os arquivos de áudio; não envie cookies ou credenciais ao repositório.
+
+Foram corrigidas 35 associações de álbum/ano nas entradas originais. O pipeline de validação concluiu novamente com sucesso após a configuração do importador.

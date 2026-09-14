@@ -14,3 +14,5 @@ O áudio é armazenado com Git LFS. Para reproduzir a aplicação localmente, in
 O catálogo revisado está em `catalog/catalog.json` e as capas em `covers/`. Gere o banco com `node generate-db.js`; confira sua sincronização com `node generate-db.js --check`.
 
 Veja [a auditoria das 153 entradas](docs/catalog-audit.md) para as correções, duplicatas, fontes e instruções de importação das novas faixas.
+
+As duas faixas de **Unknown Planet** aguardam os arquivos de áudio: o YouTube bloqueou o download automatizado por exigir login. A capa já está incluída. Veja `catalog/import-status.json`.
