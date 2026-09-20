@@ -53,6 +53,11 @@ function getSystemLanguage() {
   return 'EN';
 }
 
+function formatDailyDate(date) {
+  const [, month, day] = date.split('-');
+  return `${day}/${month}`;
+}
+
 function getDailyDateString(offsetDays = 0) {
   const d = new Date();
   if (offsetDays !== 0) d.setDate(d.getDate() - offsetDays);
@@ -230,6 +235,8 @@ function setLanguage(l) {
   if(DOM.get('statsBtn')) DOM.get('statsBtn').title = txt.statsTitle;
   if(DOM.get('newBtn')) DOM.get('newBtn').title = txt.newSong;
   if(DOM.get('calendarBtn')) DOM.get('calendarBtn').title = txt.calBtnTitle;
+  DOM.get('resultCalendarBtn').textContent = {PT: 'Calendário', EN: 'Calendar', ES: 'Calendario'}[STATE.lang];
+  DOM.get('resultCalendarBtn').title = txt.calBtnTitle;
   if(DOM.get('calendarTitle')) DOM.get('calendarTitle').textContent = txt.calTitle;
   if(DOM.get('calendarSub')) DOM.get('calendarSub').textContent = txt.calSub;
   DOM.qsa('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.val === l));
@@ -251,7 +258,7 @@ function updateDailyBannerText() {
   const dateStr = STATE.dailyDate || getDailyDateString();
   
   if (STATE.mode === 'daily') {
-    if (bannerText) bannerText.textContent = `${i18n('dailyBanner')} (${dateStr})`;
+    if (bannerText) bannerText.textContent = `${i18n('dailyBanner')} (${formatDailyDate(dateStr)})`;
     if (newBtn) newBtn.style.display = 'none';
   } else {
     if (bannerText) bannerText.textContent = i18n('practiceBanner');
@@ -595,7 +602,7 @@ async function finishGame(won, restored = false) {
 }
 
 function shareResults() {
-  const modeTag = STATE.mode === 'daily' ? `Daily (${STATE.dailyDate})` : 'Practice';
+  const modeTag = STATE.mode === 'daily' ? `Daily (${formatDailyDate(STATE.dailyDate)})` : 'Practice';
   const blocks = STATE.guesses.map(g => g.correct ? '🟩' : g.skipped ? '🟨' : '🟥').join('');
   const text = `🎵 IU Heardle [${modeTag}] - ${STATE.guesses[STATE.guesses.length-1]?.correct ? STATE.guesses.length : 'X'}/6\n${blocks}\n👉 https://kpopiuheardle.vercel.app`;
   Promise.resolve().then(() => navigator.clipboard.writeText(text)).then(() => alert(i18n('copied'))).catch(() => alert(i18n('shareError')));
@@ -613,8 +620,7 @@ function openCalendarModal() {
   }
 
   grid.innerHTML = daysList.map(dStr => {
-    const parts = dStr.split('-');
-    const displayDate = `${parts[2]}/${parts[1]}`;
+    const displayDate = formatDailyDate(dStr);
     const rawSaved = localStorage.getItem(`iu-heardle-daily-${dStr}`);
     let statusCls = 'status-pending';
     let statusText = i18n('calPlay');
@@ -811,19 +817,23 @@ DOM.get('statsResetBtn').onclick = () => {
 };
 function handlePlayAgain() {
   if (DOM.get('resultModal')) DOM.get('resultModal').classList.remove('show');
-  if (DOM.get('ambientBg')) DOM.get('ambientBg').src = '';
+  if (DOM.get('ambientBg')) DOM.get('ambientBg').removeAttribute('src');
   pauseAudio();
   STATE.audio.pause();
   STATE.audio.currentTime = 0;
 
-  if (STATE.mode === 'daily') {
-    setGameMode('practice');
-  } else {
-    init();
-  }
+  if (STATE.mode === 'practice') init();
 }
 
 DOM.get('againBtn').onclick = handlePlayAgain;
+DOM.get('resultCalendarBtn').onclick = () => {
+  DOM.get('resultModal').classList.remove('show');
+  DOM.get('ambientBg').removeAttribute('src');
+  pauseAudio();
+  STATE.audio.pause();
+  updateModalPlayBtn(false);
+  openCalendarModal();
+};
 DOM.get('newBtn').onclick = handlePlayAgain;
 if(DOM.get('shareBtn')) DOM.get('shareBtn').onclick = shareResults;
 

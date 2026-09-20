@@ -298,8 +298,9 @@ header {
 /* ─── CALENDAR ARCHIVE ─── */
 .calendar-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
 .cal-day-card {
@@ -1100,3 +1101,8 @@ header {
     padding: 20px 16px;
   }
 }
+
+#calendarModal { z-index: 1100; }
+#calendarModal .cal-day-card { min-width: 0; padding: 10px 2px; }
+#calendarModal .cal-status-badge { overflow-wrap: anywhere; }
+#resultCalendarBtn { flex: 0 0 auto; padding: 12px 10px; }

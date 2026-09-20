@@ -95,10 +95,13 @@ test('skip immediately updates duration, persists and ends after six attempts on
   await flush();
   assert.equal(game.getStats().played, 1);
   assert.equal(game.STATE.guesses.length, 6);
+  const saved = JSON.stringify(game.STATE.guesses);
   el('againBtn').click();
-  assert.equal(game.STATE.mode, 'practice');
-  assert.equal(game.STATE.over, false);
-  assert.equal(game.STATE.attempt, 0);
+  assert.equal(game.STATE.mode, 'daily');
+  assert.equal(game.STATE.over, true);
+  assert.equal(game.STATE.attempt, 6);
+  assert.equal(JSON.stringify(game.STATE.guesses), saved);
+  assert.equal(game.getStats().played, 1);
   assert.equal(el('resultModal').classList.contains('show'), false);
 });
 
@@ -119,6 +122,7 @@ test('win, full audio ending, replay, and daily restore retain correct stats', a
   assert.equal(audio.paused, true); // Restoring the daily result never autoplays.
   assert.equal(game.getStats().played, 1);
   el('againBtn').click();
+  el('modePracticeBtn').click();
   const first = game.STATE.song;
   el('newBtn').click();
   assert.notEqual(game.STATE.song.title, first.title);
@@ -218,7 +222,7 @@ test('late artwork cannot replace the next game artwork', async t => {
   let resolve;
   game.STATE.artworkPromise = new Promise(r => { resolve = r; });
   const finished = game.finishGame(false);
-  el('againBtn').click();
+  el('modePracticeBtn').click();
   resolve('https://example.com/old-cover.jpg');
   await finished;
   assert.notEqual(el('albumArt').getAttribute('src'), 'https://example.com/old-cover.jpg');
@@ -400,4 +404,30 @@ test('archived dates keep their original song after deduplication', async t => {
     game.init();
     assert.equal(game.STATE.song.file, file, date);
   }
+});
+
+
+test('result calendar opens, selects an archive and formats dates as day/month', async t => {
+  const {game, el, w} = await setup(t);
+  game.nextTurn(game.STATE.song.title);
+  await flush();
+  const stats = JSON.stringify(game.getStats());
+  const saved = w.localStorage.getItem('iu-heardle-daily-' + game.STATE.dailyDate);
+  el('againBtn').click();
+  assert.equal(w.localStorage.getItem('iu-heardle-daily-' + game.STATE.dailyDate), saved);
+  game.init();
+  await flush();
+  el('resultCalendarBtn').click();
+  assert.equal(el('resultModal').classList.contains('show'), false);
+  assert.equal(el('calendarModal').classList.contains('show'), true);
+  assert.equal(JSON.stringify(game.getStats()), stats);
+  const card = el('calendarGrid').children[1];
+  const date = card.dataset.date;
+  card.click();
+  assert.equal(game.STATE.mode, 'daily');
+  assert.equal(game.STATE.dailyDate, date);
+  const [, month, day] = date.split('-');
+  assert.ok(el('dailyBannerText').textContent.endsWith(`(${day}/${month})`));
+  assert.equal(card.querySelector('.cal-date').textContent, `${day}/${month}`);
+  assert.equal(el('calendarModal').classList.contains('show'), false);
 });
