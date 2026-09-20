@@ -13,6 +13,13 @@
       "dest": "/songs/$1"
     },
     {
+      "src": "/covers/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/covers/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }

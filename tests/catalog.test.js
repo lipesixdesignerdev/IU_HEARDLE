@@ -14,10 +14,12 @@ test('every original MP3 is covered by reviewed metadata or a duplicate alias', 
   assert.ok(catalog.songs.length >= 146);
   assert.equal(fs.readFileSync(path.join(root, 'database.js'), 'utf8'), renderDatabase(catalog));
   for (const album of Object.values(catalog.albums)) {
+    assert.match(album.cover, /^covers\/[a-z0-9-]+\.jpg$/, album.title);
     const bytes = fs.readFileSync(path.join(root, album.cover));
     assert.ok(bytes.length > 1024, album.title);
     assert.deepEqual([...bytes.subarray(0, 3)], [255, 216, 255], album.title);
   }
+  assert.ok(catalog.songs.every(song => !song.cover && !song.coverFallback));
 });
 
 test('metadata regression cases match their actual release, year and artwork', () => {

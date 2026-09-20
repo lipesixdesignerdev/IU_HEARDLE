@@ -238,21 +238,19 @@ test('duplicate titles and corrected historical titles resolve to the same song'
   }
 });
 
-test('cover error retries only the reviewed album then clears artwork and ambient', async t => {
+test('cover error never requests a remote fallback and clears artwork and ambient', async t => {
   const {game, el, requests, w} = await setup(t);
-  const song = game.musicasIU.find(s => s.coverFallback);
+  const song = game.musicasIU[0];
   game.STATE.song = song;
   game.STATE.artworkPromise = Promise.resolve(song.cover);
   game.nextTurn(song.title);
   await flush();
   assert.equal(el('albumArt').getAttribute('src'), song.cover);
   el('albumArt').dispatchEvent(new w.Event('error'));
-  assert.equal(el('albumArt').getAttribute('src'), song.coverFallback);
-  el('albumArt').dispatchEvent(new w.Event('error'));
   assert.equal(el('albumArt').style.display, 'none');
   assert.equal(el('albumFallback').style.display, 'flex');
   assert.equal(el('ambientBg').hasAttribute('src'), false);
-  assert.equal(requests.some(r => /itunes|deezer/.test(r.url)), false);
+  assert.equal(requests.some(r => /^https?:/.test(r.url)), false);
 });
 
 test('saved daily song identity survives catalogue updates', async t => {

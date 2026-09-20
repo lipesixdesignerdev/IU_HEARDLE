@@ -299,15 +299,23 @@ async function loadAudioBlob(src) {
 // ─── ARTWORK PREFETCH ───
 function artworkCandidates(song) {
   if (!song) return [];
-  return [...new Set([song.cover, song.coverFallback].filter(url =>
-    typeof url === 'string' &&
-    (/^covers\/[a-z0-9-]+\.jpg$/.test(url) ||
-      /^https:\/\/is[1-5]-ssl\.mzstatic\.com\/image\/thumb\/.+\/(?:[0-9]+x[0-9]+)bb\.jpg$/.test(url))
+  // Artwork is deliberately restricted to repository assets. Never add an
+  // iTunes/Deezer URL here: result artwork must not depend on a third party.
+  return [...new Set([song.cover].filter(url =>
+    typeof url === 'string' && /^covers\/[a-z0-9-]+\.jpg$/.test(url)
   ))];
 }
 
 async function fetchArtwork(song) {
-  return artworkCandidates(song)[0] || null;
+  const url = artworkCandidates(song)[0] || null;
+  // Start the local request as soon as the song is selected. By the time the
+  // result modal opens, the image is normally already in the browser cache.
+  if (url) {
+    const preload = new Image();
+    preload.decoding = 'async';
+    preload.src = url;
+  }
+  return url;
 }
 
 function findSongByTitle(title) {
